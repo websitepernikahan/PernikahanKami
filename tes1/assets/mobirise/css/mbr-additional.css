@@ -1094,6 +1094,11 @@ section.lazy-placeholder:after {
 .cid-qTkA127IK8 {
   background-image: url("../../../assets/images/mbr-1920x1280.jpg");
 }
+.cid-toUaXlomzy {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-image: url("../../../assets/images/background4.jpg");
+}
 .cid-qTkAaeaxX5 {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1160,4 +1165,114 @@ section.lazy-placeholder:after {
     justify-content: center;
     -webkit-justify-content: center;
   }
+}
+.cid-UfhnPuZrgE P {
+  color: #1281fc;
+}
+.cid-UfhnPuZrgE DIV {
+  color: #ffffff;
+}
+.cid-UfhnPuZrgE H10 {
+  color: #034e75;
+}
+.cid-UfhnPuZrgE .hidden {
+  display: none;
+}
+.cid-UfhnPuZrgE .icon-bar {
+  z-index: 100002;
+  position: fixed;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-right: 11px;
+}
+.cid-UfhnPuZrgE .icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 3px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  padding-left: 11px;
+}
+.cid-UfhnPuZrgE .icon-bar a:hover {
+  background-color: #000000;
+}
+.cid-UfhnPuZrgE .flag {
+  background: transparent;
+}
+.cid-UfhnPuZrgE .content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+.cid-UfhnPuZrgE .nav-right {
+  float: left !important;
+  position: relative;
+}
+.cid-UfhnPuZrgE #google_translate_element {
+  display: none;
+}
+.cid-UfhnPuZrgE .goog-te-banner {
+  display: none;
+}
+.cid-UfhnPuZrgE .skiptranslate {
+  display: none;
+  bottom: 0px;
+  position: relative;
+}
+.cid-UfhnPuZrgE .goog-te-spinner-pos {
+  display: none !important;
+}
+.cid-UfhnPuZrgE body {
+  top: 0px !important;
+}
+.cid-UfhnPuZrgE body body {
+  top: 0 !important;
+}
+.cid-UfhnPuZrgE body .goog-te-banner-frame {
+  display: none !important;
+}
+.cid-UfhnPuZrgE .goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+.cid-UfhnPuZrgE .goog-tooltip {
+  display: none !important;
+}
+.cid-UfhnPuZrgE .goog-tooltip:hover {
+  display: none !important;
+}
+.cid-UfhnPuZrgE .goog-text-highlight {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  display: none !important;
+  Background-color: transparent;
+}
+.cid-UfhnPuZrgE #goog-gt-tt,
+.cid-UfhnPuZrgE .goog-te-balloon-frame {
+  display: none !important;
+}
+.cid-UfhnPuZrgE #goog-gt-tt {
+  visibility: hidden;
+  display: none !important;
+}
+.cid-UfhnPuZrgE .goog-logo-link {
+  display: none !important;
+}
+.cid-UfhnPuZrgE .goog-te-gadget {
+  height: 28px !important;
+  overflow: hidden;
+}
+.cid-UfhnPuZrgE div.imgtest {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  content: url(https://www.unsitepourtous.be/logoscript/logo-zen.png);
+}
+.cid-UfhnPuZrgE div.imgtest2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  content: url(https://www.unsitepourtous.be/logoscript/flags145.png);
 }

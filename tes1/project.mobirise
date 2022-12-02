@@ -37,10 +37,13 @@
       }
     ],
     "versionFirst": "4.7.6",
-    "uniqCompNum": 3,
+    "uniqCompNum": 5,
     "versionPublish": "4.12.4",
     "imageResize": true,
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "dppsSwitcher": true,
+    "spellingSwitch": true,
+    "site_lang": "en"
   },
   "pages": {
     "index.html": {
@@ -481,6 +484,29 @@
           "_params": {}
         },
         {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            }
+          },
+          "_name": "header1",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked=\"\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax=\"\" selected=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#7f1933\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#149dcc\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    FULL WIDTH INTRO\n                </h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Full width intro with adjustable height, background image and a color overlay. Click any text to edit or style it.\n                </p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-secondary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbr-iconfont mbri-file\"></span>LEARN MORE</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "toUaXlomzy",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header1-4"
+        },
+        {
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
@@ -557,6 +583,138 @@
           "_customHTML": "<section group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->  \n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Copyright\" name=\"showCopyright\" checked=\"\">\n        <select title=\"Icons\" name=\"iconsCount\">\n            <option value=\"0\">0</option>\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected=\"\">6</option>\n        </select>\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2e2e2e\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row content text-white\">\n            <div class=\"col-12 col-md-3\">\n                <div class=\"media-wrap\">\n                    <a href=\"https://mobirise.com/\">\n                        <img src=\"../_images/logo2.png\" alt=\"Mobirise\">\n                    </a>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\">\n                    Address\n                </h5>\n                <p class=\"mbr-text\">\n                    1234 Street Name\n                    <br>City, AA 99999\n                </p>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\">\n                    Contacts\n                </h5>\n                <p class=\"mbr-text\">\n                    Email: support@mobirise.com\n                    <br>Phone: +1 (0) 000 0000 001\n                    <br>Fax: +1 (0) 000 0000 002\n                </p>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\">\n                    Links\n                </h5>\n                <p class=\"mbr-text\">\n                    <a class=\"text-primary\" href=\"https://mobirise.com/\">Website builder</a>\n                    <br><a class=\"text-primary\" href=\"https://mobirise.com/mobirise-free-win.zip\">Download for Windows</a>\n                    <br><a class=\"text-primary\" href=\"https://mobirise.com/mobirise-free-mac.zip\">Download for Mac</a>\n                </p>\n            </div>\n        </div>\n        <div class=\"footer-lower\" mbr-if=\"showCopyright\">\n            <div class=\"media-container-row\">\n                <div class=\"col-sm-12\">\n                    <hr>\n                </div>\n            </div>\n            <div class=\"media-container-row mbr-white\">\n                <div class=\"col-sm-6 copyright\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright > p\">\n                        © Copyright 2020 Mobirise - All Rights Reserved\n                    </p>\n                </div>\n                <div class=\"col-md-6\">\n                    <div class=\"social-list align-right\" mbr-if=\"iconsCount > 0\">\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>0\">\n                            <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                                <span mbr-icon=\"\" class=\"socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>1\">\n                            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                                <span mbr-icon=\"\" class=\"socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>2\">\n                            <a href=\"https://www.youtube.com/c/mobirise\" target=\"_blank\">\n                                <span mbr-icon=\"\" class=\"socicon-youtube socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>3\">\n                            <a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n                                <span mbr-icon=\"\" class=\"socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>4\">\n                            <a href=\"https://plus.google.com/u/0/+Mobirise\" target=\"_blank\">\n                                <span mbr-icon=\"\" class=\"socicon-googleplus socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>5\">\n                            <a href=\"https://www.behance.net/Mobirise\" target=\"_blank\">\n                                <span mbr-icon=\"\" class=\"socicon-behance socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n",
           "_cid": "qTkAaeaxX5",
           "_anchor": "footer1-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "P": {
+              "color": "#1281fc"
+            },
+            "DIV": {
+              "color": "#ffffff"
+            },
+            "H10": {
+              "color": "#034e75"
+            },
+            ".hidden": {
+              "display": "none"
+            },
+            ".icon-bar": {
+              "z-index": "100002",
+              "position": "fixed",
+              "& when not (@Flagspos)": {
+                "right": "0"
+              },
+              "top": "(@topflag * 1%)",
+              "-webkit-transform": "translateY(-50%)",
+              "-ms-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)",
+              "padding-right": "(@paddingleft * 1px)"
+            },
+            ".icon-bar a": {
+              "display": "block",
+              "text-align": "center",
+              "padding": "(@paddingflag * 1px)",
+              "transition": "all 0.3s ease",
+              "color": "white",
+              "font-size": "20px",
+              "padding-left": "(@paddingleft * 1px)"
+            },
+            ".icon-bar a:hover": {
+              "background-color": "@borderColor"
+            },
+            "& when not (@transp)": {
+              ".flag": {
+                "background": "@borderColor"
+              }
+            },
+            "& when (@transp)": {
+              ".flag": {
+                "background": "transparent"
+              }
+            },
+            ".content": {
+              "margin-left": "75px",
+              "font-size": "30px"
+            },
+            ".nav-right": {
+              "float": "left !important",
+              "position": "relative"
+            },
+            "#google_translate_element": {
+              "display": "none"
+            },
+            ".goog-te-banner": {
+              "display": "none"
+            },
+            ".skiptranslate": {
+              "display": "none",
+              "bottom": "0px",
+              "position": "relative"
+            },
+            ".goog-te-spinner-pos": {
+              "display": "none !important"
+            },
+            "body": {
+              "body": {
+                "top": "0 !important"
+              },
+              ".goog-te-banner-frame": {
+                "display": "none !important"
+              },
+              "top": "0px !important"
+            },
+            ".goog-te-banner-frame.skiptranslate": {
+              "display": "none !important"
+            },
+            ".goog-tooltip": {
+              "display": "none !important"
+            },
+            ".goog-tooltip:hover": {
+              "display": "none !important"
+            },
+            ".goog-text-highlight": {
+              "background-color": "transparent !important",
+              "border": "none !important",
+              "box-shadow": "none !important",
+              "display": "none !important",
+              "Background-color": "transparent"
+            },
+            "#goog-gt-tt, .goog-te-balloon-frame": {
+              "display": "none !important"
+            },
+            "#goog-gt-tt": {
+              "visibility": "hidden",
+              "display": "none !important"
+            },
+            ".goog-logo-link": {
+              "display": "none !important"
+            },
+            ".goog-te-gadget": {
+              "height": "28px !important",
+              "overflow": "hidden"
+            },
+            "div.imgtest": {
+              "margin-left": "auto",
+              "margin-right": "auto",
+              "width": "100px",
+              "content": "url(https://www.unsitepourtous.be/logoscript/logo-zen.png)"
+            },
+            "div.imgtest2": {
+              "margin-left": "auto",
+              "margin-right": "auto",
+              "width": "250px",
+              "content": "url(https://www.unsitepourtous.be/logoscript/flags145.png)"
+            }
+          },
+          "_name": "design-block",
+          "_customHTML": "<section data-bs-version=\"5.1\" mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n    <mbr-parameters>\n<hr>\n\n      \n     <header>Float Flags Menu 1.4.5</header>\n\n       <input type=\"checkbox\" title=\"Show Flags Bar\" name=\"Flagsbar\" checked> \n              <input type=\"checkbox\" title=\"Bar Position\" name=\"Flagspos\" condition=\"Flagsbar\" checked>    \n        <input type=\"range\" inline title=\"Padding\" name=\"paddingflag\" min=\"1\" max=\"30\" step=\"1\" value=\"3\" condition=\"Flagsbar\">\n        <input type=\"range\" inline title=\"Padding Border\" name=\"paddingleft\" min=\"1\" max=\"30\" step=\"1\" value=\"11\" condition=\"Flagsbar\">\n        <input type=\"range\" inline title=\"Top\" name=\"topflag\" min=\"1\" max=\"100\" step=\"1\" value=\"45\" condition=\"Flagsbar\">\n   \n     <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">Color</header>\n\t\t <input type=\"checkbox\" title=\"Background Transparent\" name=\"transp\" condition=\"Flagsbar\" checked>\n          <input type=\"color\" title=\"Button Bckg Color\" name=\"borderColor\" value=\"#000000\" condition=\"Flagsbar\"> \n      \n     <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">Language</header>\n <input type=\"checkbox\" title=\"English\" name=\"langgb\" condition=\"Flagsbar\" checked>\n  <input type=\"checkbox\" title=\"French\" name=\"langfr\" condition=\"Flagsbar\" checked>\n   <input type=\"checkbox\" title=\"Dutch\" name=\"langnl\" condition=\"Flagsbar\" checked>\n    <input type=\"checkbox\" title=\"German\" name=\"langde\" condition=\"Flagsbar\" checked>\n\t\t <input type=\"checkbox\" title=\"Spanish\" name=\"langes\" condition=\"Flagsbar\" checked>\n                  \t\t <input type=\"checkbox\" title=\"Portugese\" name=\"langpt\" condition=\"Flagsbar\" checked>\n          <input type=\"checkbox\" title=\"Italian\" name=\"langit\" condition=\"Flagsbar\" checked>\n              <input type=\"checkbox\" title=\"Greek\" name=\"langgr\" condition=\"Flagsbar\" checked> \n                  <input type=\"checkbox\" title=\"Urdu\" name=\"langur\" condition=\"Flagsbar\" checked> \n     <input type=\"checkbox\" title=\"Russian\" name=\"langru\" condition=\"Flagsbar\" checked>\n                  \n      <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">WARNING</header>\n    <header condition=\"Flagsbar\">The start page must be in english, if your site is not en english, you must with code editor modify the line 37 and and replace \"en\" by your language code ( es, fr, de, ru,nl )</header>\n      \n\n        \n        \n    </mbr-parameters> \n    \n    \n    \n    \n  <script type=\"text/javascript\">\n  function googleTranslateElementInit() {\n    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, multilanguagePage: true}, 'google_translate_element');\n  }\n</script>\n\n  <script type=\"text/javascript\">\nvar toolBar = document.getElementsByClassName('goog-te-banner-frame skiptranslate')[0];\nif(toolBar !== undefined) {\n    toolBar.style.display  = 'none';\n    document.body.style.top = '0px';\n}\n</script>\n\n\n  <script src=\"https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\" type=\"text/javascript\"></script>\n\n<style>\n.nav-right {\n  float: left !important;\n  position: relative;\n}\n\n#google_translate_element {\n  display: none;\n}\n\n.goog-te-banner {\n  display: none;\n}\n\n.2.container {\n  display: none;\n}\n\n.skiptranslate {\n  display: none;\n  bottom: 0px;\n  position: relative;\n}\n\n.goog-te-spinner-pos {\n  display: none !important;\n}\n\n.goog-logo-link{display: none !important;}\n.goog-te-gadget{height: 28px !important;  overflow: hidden;}\n\n.goog-te-banner-frame.skiptranslate {display: none !important;} \nbody { top: 0px !important; }\n\n\nbody {\nbody{ top: 0 !important;}\n.goog-te-banner-frame{display: none !important;}\n}\n\n.goog-tooltip {\n    display: none !important;\n}\n.goog-tooltip:hover {\n    display: none !important;\n}\n.goog-text-highlight {\n    background-color: transparent !important;\n    border: none !important; \n    box-shadow: none !important;\n}\n\n#goog-gt-tt, .goog-te-balloon-frame{display: none !important;} \n\n\n\n</style>\n\n<div class=\"icon-bar\" mbr-if=\"Flagsbar\">\n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(en)';location.reload();\" alt=\"EN\" title=\"EN\" class=\"flag\" mbr-if=\"langgb\"><i class=\"flag-icon-gb flag-icon\" mbr-if=\"langgb\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(fr)';location.reload();\" alt=\"FR\" title=\"FR\" class=\"flag\" mbr-if=\"langfr\"><i class=\"flag-icon-bl flag-icon\" mbr-if=\"langfr\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(nl)';location.reload();\" alt=\"NL\" title=\"NL\" class=\"flag\" mbr-if=\"langnl\"><i class=\"flag-icon-nl flag-icon\" mbr-if=\"langnl\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(de)';location.reload();\" alt=\"DE\" title=\"DE\" class=\"flag\" mbr-if=\"langde\"><i class=\"flag-icon-de flag-icon\" mbr-if=\"langde\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(es)';location.reload();\" alt=\"ES\" title=\"ES\" class=\"flag\" mbr-if=\"langes\"><i class=\"flag-icon-es flag-icon\" mbr-if=\"langes\"></i></a>\n \t \t \t \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(pt)';location.reload();\" alt=\"PT\" title=\"PT\" class=\"flag\" mbr-if=\"langpt\"><i class=\"flag-icon-pt flag-icon\" mbr-if=\"langpt\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(it)';location.reload();\" alt=\"IT\" title=\"IT\" class=\"flag\" mbr-if=\"langit\"><i class=\"flag-icon-it flag-icon\" mbr-if=\"langit\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(el)';location.reload();\" alt=\"GR\" title=\"GR\" class=\"flag\" mbr-if=\"langgr\"><i class=\"flag-icon-gr flag-icon\" mbr-if=\"langgr\"></i></a> \n \t \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ur)';location.reload();\" alt=\"UR\" title=\"UR\" class=\"flag\" mbr-if=\"langur\"><i class=\"flag-icon-pk flag-icon\" mbr-if=\"langur\"></i></a>  \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ru)';location.reload();\" alt=\"RU\" title=\"RU\" class=\"flag\" mbr-if=\"langru\"><i class=\"flag-icon-ru flag-icon\" mbr-if=\"langru\"></i></a> \n\n</div>\n\n  \n \n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background: linear-gradient( #807e7f, #f1f1f1, #807e7f);\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br><div class=\"imgtest2\"></div><br>Version 1.4.5<br>\n        Click the \"gear\" icon to change the layout of the flags bar. This text/logo will be removed on preview/publish.<br>You need the following extension for flags https://witsec.nl/extension-additional-icons.html#flag-icons<br><br><div class=\"imgtest\"></div><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
+          "_cid": "UfhnPuZrgE",
+          "_anchor": "design-block-UfhnPuZrgE",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
