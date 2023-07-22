@@ -20,7 +20,7 @@
   position: absolute;
   top: calc(50% - 32px);
   left: calc(50% - 24px);
-  font-family: 'MobiriseIcons' !important;
+  font-family: 'Moririse2' !important;
   font-size: 3rem !important;
   color: #fff;
   opacity: 0;
@@ -28,10 +28,10 @@
   z-index: 5; }
 
 .mbr-gallery .icon-focus::before {
-  content: '\e96b'; }
+  content: '\e970'; }
 
 .mbr-gallery .icon-video::before {
-  content: '\e95c'; }
+  content: '\e95f'; }
 
 .mbr-gallery .mbr-gallery-item > div:hover .icon-focus,
 .mbr-gallery .mbr-gallery-item > div:hover .icon-video {
@@ -145,7 +145,7 @@
   -moz-transition: opacity .3s ease;
   -o-transition: opacity .3s ease;
   transition: opacity .3s ease;
-  font-family: 'MobiriseIcons'; }
+  font-family: 'Moririse2'; }
   .mbr-gallery .modal .close::before {
     content: '\e91a'; }
 
@@ -437,4 +437,4 @@
   .mbr-gallery .mbr-gallery-item--p1 {
     width: 100%; } }
 
-/*# sourceMappingURL=style.css.map */
+
