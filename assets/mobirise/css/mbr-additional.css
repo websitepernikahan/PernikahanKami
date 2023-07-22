@@ -8127,7 +8127,7 @@ a {
 .cid-tKHDva6EMM {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-image: url("../../../assets/images/mbr-1920x1280.jpg");
+  background-color: #000000;
 }
 .cid-tKHDva6EMM .mbr-fallback-image.disabled {
   display: none;
@@ -8140,9 +8140,6 @@ a {
   height: 100%;
   position: absolute;
   top: 0;
-}
-.cid-tKHDva6EMM .row {
-  flex-direction: row-reverse;
 }
 @media (max-width: 767px) {
   .cid-tKHDva6EMM .row {
