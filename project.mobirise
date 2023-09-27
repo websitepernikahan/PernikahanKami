@@ -57,7 +57,7 @@
     "spellingSwitch": true,
     "site_lang": "en",
     "imageResize": true,
-    "uniqCompNum": 150,
+    "uniqCompNum": 151,
     "versionPublish": "5.9.0",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/cool-text-425299288142175-1-128x111_1.png",
@@ -19421,7 +19421,8 @@
       "settings": {
         "title": "Page 14",
         "order": "1",
-        "header_custom": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js\"></script>"
+        "header_custom": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js\"></script>",
+        "footer_custom": "Show images based on variable link\n<style>\n.showhid,.showhid2,.showhid3{\n  display: none;\n}\n</style>\nPlease active witsec jquery before see script work fine!\n  This is a default text showing with no variable. Imagine what you can do with this script wow!\n<div class=\"showhid\">\n<p>You can't read it unless you use the right URL parameter (?show). Only a class, no ID.\n<a href=\"index.html\">Go Back</a>\n</p>\n</div>\n<div class=\"showhid2\">\n<p>Showing image 1 based on variable ?image1.\n</p>\n<img src=\"1.png\" alt=\"image 1\">\n<a href=\"index.html\">Go Back</a>\n</div>\n<div class=\"showhid3\">\n<p>Showing image 2 based on variable ?image2.</p>\n<img src=\"2.png\" alt=\"image 2\">\n<a href=\"index.html\">Go Back</a>\n</div>\n<script id=\"rendered-js\" >\nif (window.location.search.indexOf('show') > -1) {\n  jQuery('.showhid').css({ \"display\": \"block\" });\n}\n \nif (window.location.search.indexOf('image1') > -1) {\n  jQuery('.showhid2').css({ \"display\": \"block\" });\n}\n   \nif (window.location.search.indexOf('image2') > -1) {\n  jQuery('.showhid3').css({ \"display\": \"block\" });\n}\n\n      else\n    {}\n        </script>"
       },
       "components": [
         {
@@ -20468,6 +20469,21 @@
           "_once": "menu",
           "_params": {},
           "_anchor": "mobigarymenu1-45"
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<!-- Type valid HTML here -->\n\nUse this on index or first page ie: index.html\n <a href=\"destination.html?show\">Clic here to show content</a> \n<br>\n <a href=\"destination.html?image1\">Clic here to show IMAGE 1</a> \n <br>\n  <a href=\"destination.html?image2\">Clic here to show IMAGE2</a> ",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "custom-html-46",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         }
       ]
     }

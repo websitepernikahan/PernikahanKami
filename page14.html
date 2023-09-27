@@ -77,6 +77,15 @@
 
 </section>
 
+<div id="custom-html-46"><!-- Type valid HTML here -->
+
+Use this on index or first page ie: index.html
+ <a href="destination.html?show">Clic here to show content</a> 
+<br>
+ <a href="destination.html?image1">Clic here to show IMAGE 1</a> 
+ <br>
+  <a href="destination.html?image2">Clic here to show IMAGE2</a> </div>
+
 
 <script src="assets/witsec-jquery-3.5.1/jquery-3.5.1.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
@@ -89,7 +98,46 @@
   <script src="assets/theme/js/script.js"></script>
   
   
-  
+  Show images based on variable link
+<style>
+.showhid,.showhid2,.showhid3{
+  display: none;
+}
+</style>
+Please active witsec jquery before see script work fine!
+  This is a default text showing with no variable. Imagine what you can do with this script wow!
+<div class="showhid">
+<p>You can't read it unless you use the right URL parameter (?show). Only a class, no ID.
+<a href="index.html">Go Back</a>
+</p>
+</div>
+<div class="showhid2">
+<p>Showing image 1 based on variable ?image1.
+</p>
+<img src="1.png" alt="image 1">
+<a href="index.html">Go Back</a>
+</div>
+<div class="showhid3">
+<p>Showing image 2 based on variable ?image2.</p>
+<img src="2.png" alt="image 2">
+<a href="index.html">Go Back</a>
+</div>
+<script id="rendered-js" >
+if (window.location.search.indexOf('show') > -1) {
+  jQuery('.showhid').css({ "display": "block" });
+}
+ 
+if (window.location.search.indexOf('image1') > -1) {
+  jQuery('.showhid2').css({ "display": "block" });
+}
+   
+if (window.location.search.indexOf('image2') > -1) {
+  jQuery('.showhid3').css({ "display": "block" });
+}
+
+      else
+    {}
+        </script>
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
   
