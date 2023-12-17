@@ -80,7 +80,9 @@
       "name": "",
       "icon": "@ADDONS_PATH@/pwa-builder/assets/icons/512x512.png",
       "themeColor": "#9fe870"
-    }
+    },
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "index.html": {
