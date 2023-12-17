@@ -1550,6 +1550,46 @@ a {
     margin-bottom: 2rem;
   }
 }
+.cid-tYGCe7qnMg {
+  display: flex;
+  background-image: url("../../../assets/images/online-invitation-wedding-website-645-1400x656.jpg");
+}
+.cid-tYGCe7qnMg .mbr-overlay {
+  background-color: #353535;
+  opacity: 0.5;
+}
+.cid-tYGCe7qnMg .content-wrap {
+  padding: 5rem 1rem;
+}
+@media (min-width: 768px) {
+  .cid-tYGCe7qnMg {
+    align-items: flex-end;
+  }
+  .cid-tYGCe7qnMg .row {
+    justify-content: flex-start;
+  }
+  .cid-tYGCe7qnMg .content-wrap {
+    width: 51%;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-tYGCe7qnMg .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-tYGCe7qnMg {
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .cid-tYGCe7qnMg .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-tYGCe7qnMg .content-wrap {
+    width: 100%;
+  }
+}
 .cid-tXn8FoFKyi {
   padding-top: 90px;
   padding-bottom: 90px;
