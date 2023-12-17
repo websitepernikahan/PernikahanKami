@@ -1513,6 +1513,21 @@ a {
 .cid-tYzIHTzcGw H1 {
   color: #ffffff;
 }
+.cid-tYGKVZcmbZ {
+  background-image: url("../../../assets/images/mbr-4-1920x1280.jpg");
+}
+.cid-tYGKVZcmbZ .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-tYGKVZcmbZ .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
 .cid-tXn8FoFKyi {
   padding-top: 90px;
   padding-bottom: 90px;
