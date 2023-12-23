@@ -1104,7 +1104,7 @@ a {
 }
 .cid-tYH6I1Jain {
   padding-top: 15rem;
-  padding-bottom: 15rem;
+  padding-bottom: 17rem;
   background-color: transparent;
   overflow: hidden;
 }
@@ -1225,6 +1225,82 @@ a {
 .cid-tXn9D7LxvK H1 {
   color: #7a6a08;
 }
+.cid-tZfkog57XF {
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+.cid-tZfkog57XF svg {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translate(-50%) scale(2, 1.2);
+  animation: wave 5s ease-in-out infinite;
+}
+@keyframes line {
+  from {
+    transform: translateY(4px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  to {
+    transform: translateY(4px);
+  }
+}
+@keyframes wave {
+  from {
+    transform: rotate(-0.2deg) translate(-50%) scale(2, 1.2);
+  }
+  50% {
+    transform: rotate(0.2deg) translate(-50%) scale(2.1, 1.3);
+  }
+  to {
+    transform: rotate(-0.2deg) translate(-50%) scale(2, 1.2);
+  }
+}
+.cid-tZfkog57XF .mbr-text,
+.cid-tZfkog57XF .mbr-section-btn {
+  color: #716c80;
+}
+.cid-tZfkog57XF #e12_areaS3 {
+  fill: #e1e8ff !important;
+}
+.cid-tZfkog57XF #e19_areaS3 {
+  fill: #bfceff !important;
+}
+.cid-tZfkog57XF H1 {
+  color: #57468b;
+}
+.cid-tZfkog57XF img {
+  width: 70%;
+  border-radius: 10px;
+  animation: line 4s ease-in-out infinite;
+  box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.35);
+}
+.cid-tZfkog57XF .box {
+  width: 95%;
+  height: 90%;
+  opacity: 0.5;
+  background-color: #ffffff;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 0.5rem;
+}
+@media (max-width: 1200px) {
+  .cid-tZfkog57XF .box {
+    top: 2%;
+    width: 97%;
+    height: 96%;
+  }
+}
+@media (max-width: 576px) {
+  .cid-tZfkog57XF img {
+    width: 100%;
+  }
+}
 .cid-tYAtjJo1p3 {
   padding-top: 45px;
   padding-bottom: 0px;
@@ -1245,6 +1321,21 @@ a {
   .cid-tYAtjJo1p3 .mbr-figure img {
     width: 100% !important;
   }
+}
+.cid-tZfkpBoz2u {
+  background-color: #e0bdb6;
+}
+.cid-tZfkpBoz2u .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-tZfkpBoz2u .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
 }
 .cid-tYe6xYOYYb {
   padding-top: 5rem;

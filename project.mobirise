@@ -31,7 +31,8 @@
       },
       "additionalSetColors": [
         "#eeeeee",
-        "#f9f295"
+        "#f9f295",
+        "#e0bdb6"
       ]
     },
     "path": "@PROJECT_PATH@",
@@ -57,7 +58,7 @@
     "spellingSwitch": true,
     "site_lang": "en",
     "imageResize": true,
-    "uniqCompNum": 225,
+    "uniqCompNum": 234,
     "versionPublish": "5.9.0",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/cool-text-425299288142175-1-128x111_1.png",
@@ -79,7 +80,7 @@
     "page1.html": {
       "settings": {
         "title": "Page 1",
-        "order": "16"
+        "order": "17"
       },
       "components": [
         {
@@ -1802,7 +1803,7 @@
     "page2.html": {
       "settings": {
         "title": "Page 2",
-        "order": "15"
+        "order": "16"
       },
       "components": [
         {
@@ -3611,7 +3612,7 @@
     "M4.html": {
       "settings": {
         "title": "M4",
-        "order": "14"
+        "order": "15"
       },
       "components": [
         {
@@ -4886,7 +4887,7 @@
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
-        "order": "13"
+        "order": "14"
       },
       "components": [
         {
@@ -6328,7 +6329,7 @@
     "page6.html": {
       "settings": {
         "title": "Page 6",
-        "order": "12"
+        "order": "13"
       },
       "components": [
         {
@@ -7721,7 +7722,7 @@
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
-        "order": "11"
+        "order": "12"
       },
       "components": [
         {
@@ -10257,7 +10258,7 @@
     "tesUrlParam.html": {
       "settings": {
         "title": "TesURLParam&nbsp;",
-        "order": "7",
+        "order": "8",
         "footer_custom": "<script>\n    function getParameterByName(name, url = window.location.href) {\n        name = name.replace(/[\\[\\]]/g, '\\\\$&');\n        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),\n            results = regex.exec(url);\n        if (!results) return null;\n        if (!results[2]) return '';\n        return decodeURIComponent(results[2].replace(/\\+/g, ' '));\n    }\n    var client = getParameterByName('client');\n\tvar age = getParameterByName('age');\n\tvar phone = getParameterByName('phone');\n    document.getElementById(\"client\").innerText = client;\n\tdocument.getElementById(\"age\").innerText = age;\n\tdocument.getElementById(\"phone\").innerText = phone;\n</script>"
       },
       "components": [
@@ -11488,7 +11489,7 @@
     "page10.html": {
       "settings": {
         "title": "Page 10",
-        "order": "6",
+        "order": "7",
         "footer_custom": "<script> const searchParams = new URLSearchParams(location.search),\n  imagePath = searchParams.get('image-id'),\n  image = new Image() // you can use querySelector to target an existing image tag\nimage.src = imagePath; </script>"
       },
       "components": [
@@ -12603,7 +12604,7 @@
     "page11.html": {
       "settings": {
         "title": "Page 11",
-        "order": "5",
+        "order": "6",
         "footer_custom": "<script>\n/*\nUnbounce Community :: Tips & Scripts :: Dynamically Change Background Image with URL Parameters\nTS:0002-04-045\n***********************\nDo not remove this section. It helps our team track useage of external workarounds.\n*/    \n    \nfunction getURLParameter(name) {\n    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,\"\"])[1].replace(/\\+/g, '%20'))||null\n}\nvar background = getURLParameter('background');\nif (background) {\ndocument.getElementById(\"mbr-overlay\").style.backgroundImage = 'url('+background+')'; // add the ID of the section you would like the change the background for\n};  \n</script>\nview raw\ndynamic-background.html hosted with ❤ by GitHub"
       },
       "components": [
@@ -13743,7 +13744,7 @@
     "page13.html": {
       "settings": {
         "title": "Page 13",
-        "order": "4",
+        "order": "5",
         "header_custom": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\" integrity=\"sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==\" crossorigin=\"anonymous\"></script>"
       },
       "components": [
@@ -14850,7 +14851,7 @@
     "page14.html": {
       "settings": {
         "title": "Page 14",
-        "order": "3",
+        "order": "4",
         "header_custom": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js\"></script>",
         "footer_custom": "Show images based on variable link\n<style>\n.showhid,.showhid2,.showhid3{\n  display: none;\n}\n</style>\nPlease active witsec jquery before see script work fine!\n  This is a default text showing with no variable. Imagine what you can do with this script wow!\n<div class=\"showhid\">\n<p>You can't read it unless you use the right URL parameter (?show). Only a class, no ID.\n<a href=\"index.html\">Go Back</a>\n</p>\n</div>\n<div class=\"showhid2\">\n<p>Showing image 1 based on variable ?image1.\n</p>\n<img src=\"1.png\" alt=\"image 1\">\n<a href=\"index.html\">Go Back</a>\n</div>\n<div class=\"showhid3\">\n<p>Showing image 2 based on variable ?image2.</p>\n<img src=\"2.png\" alt=\"image 2\">\n<a href=\"index.html\">Go Back</a>\n</div>\n<script id=\"rendered-js\" >\nif (window.location.search.indexOf('show') > -1) {\n  jQuery('.showhid').css({ \"display\": \"block\" });\n}\n \nif (window.location.search.indexOf('image1') > -1) {\n  jQuery('.showhid2').css({ \"display\": \"block\" });\n}\n   \nif (window.location.search.indexOf('image2') > -1) {\n  jQuery('.showhid3').css({ \"display\": \"block\" });\n}\n\n      else\n    {}\n        </script>"
       },
@@ -16427,7 +16428,7 @@
     "example-ditunda.html": {
       "settings": {
         "title": "example tidak jadi",
-        "order": "17"
+        "order": "18"
       },
       "components": [
         {
@@ -18105,7 +18106,7 @@
     "example tes.html": {
       "settings": {
         "title": "example tes",
-        "order": "18"
+        "order": "19"
       },
       "components": [
         {
@@ -19787,7 +19788,7 @@
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
-        "order": "10"
+        "order": "11"
       },
       "components": [
         {
@@ -21273,7 +21274,7 @@
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
-        "order": "2"
+        "order": "3"
       },
       "components": [
         {
@@ -22754,7 +22755,7 @@
     "buat-website.html": {
       "settings": {
         "title": "buat website sendiri",
-        "order": "8",
+        "order": "9",
         "footer_custom": "<script>\n    function getParameterByName(name, url = window.location.href) {\n        name = name.replace(/[\\[\\]]/g, '\\\\$&');\n        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),\n            results = regex.exec(url);\n        if (!results) return null;\n        if (!results[2]) return '';\n        return decodeURIComponent(results[2].replace(/\\+/g, ' '));\n    }\n    var client = getParameterByName('client');\n\tvar age = getParameterByName('age');\n\tvar phone = getParameterByName('phone');\n    document.getElementById(\"client\").innerText = client;\n\tdocument.getElementById(\"age\").innerText = age;\n\tdocument.getElementById(\"phone\").innerText = phone;\n</script>"
       },
       "components": [
@@ -24213,7 +24214,7 @@
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
-        "order": "9"
+        "order": "10"
       },
       "components": [
         {
@@ -25858,6 +25859,47 @@
         {
           "alias": false,
           "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_name": "header6",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header6\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value>Left</option>\n            <option value=\"justify-content-center\" selected>Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background6.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#e0bdb6\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#4479d9\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>MOBIRISE BUILDER</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mbr-white mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-white mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Tanpa mengurangi rasa hormat, izinkan kami mengundang Bapak/Ibu/Saudara/Saudari untuk menghadiri acara pernikahan kami. Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/Saudari berkenan untuk hadir dan memberikan doa restu.\n                </p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-danger\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Create Your Website!</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tZeNMQzZxC",
+          "_anchor": "header6-6b",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
             "padding-bottom": "(@paddingBottom * 1rem)",
             "background-color": "@bgColor",
@@ -25869,7 +25911,7 @@
           },
           "_name": "content7",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content7\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <input type=\"color\" name=\"lineColor\" title=\"Line Color\" value=\"#6592e6\">\n        <input type=\"color\" name=\"cardColor\" title=\"Color\" value=\"#fafafa\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md-{{textWidth}}\">\n                <blockquote>\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>20 kata kata mutiara dari tokoh tokoh terkenal:</b></h5>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">1. \"Jika seseorang dapat memperpanjang kebahagiaan cinta dalam pernikahan, itu akan menjadi surga di bumi.\" - Jean-Jacques Rousseau\n<br>\n<br>2. \"Dalam setiap pernikahan lebih dari seminggu yang lalu, ada alasan untuk perceraian. Triknya adalah menemukan, dan terus menemukan, alasan untuk menikah.\" - Sir Robert Anderson\n<br>\n<br>3. \"Sahabat terbaik cenderung mendapatkan istri terbaik, karena pernikahan yang baik didasarkan pada bakat untuk persahabatan.\" - Friedrich Nietzsche\n<br>\n<br>4. \"Ingat bahwa menciptakan pernikahan yang sukses itu seperti bertani, anda harusnya memulainya lagi setiap pagi” H. Jackson Brown Jr\n<br>\n<br>5. \"Kebahagiaan dalam pernikahan adalah masalah kebetulan.\" - Jane Austen\n<br>\n<br>6. \"Saya percaya pada pernikahan. Saya percaya pernikahan adalah institusi yang sangat penting, ini adalah salah satu institusi terpenting yang kita miliki.\" - Theresa May\n<br>\n<br>7. \"Menikah membuatku mengerti bahwa pada titik tertentu manusia membutuhkan seseorang yang lebih dari keluarga.\" - Aisha Blackwell\n<br>\n<br>8. \"Ada empat persyaratan dalam setiap pernikahan yang membahagiakan. Yang pertama adalah iman, dan sisanya adalah kepercayaan.\" - Elbert Hubbard\n<br>\n<br>9. \"Pernikahan bukanlah surga atau neraka, tetapi hanyalah penyucian.\" - Abraham Lincoln\n<br>\n<br>10. \"Tersembunyi atau terlihat, ada sebuah pemisah antara laki laki dan perempuan sampai sebuah pernikahan menyatukan mereka.\" - C. S. Lewis\n<br>\n<br>11. \"Pernikahan yang bahagia selalu menikmati kesenangan-kesenangan persahabatan. Semua keindahan dan kemanisan bercampur dalam bahagianya hidup.\" - Joseph Addison\n<br>\n<br>12. \"Sukses dalam pernikahan bukanlah dicapai sekadar melalui menemukan pasangan yang tepat, melainkan juga melalui menjadi pasangan yang tepat. – Barnett\n<br>\n<br>13. \" Pernikahan yang indah bukanlah sesuatu yang terjadi begitu saja; itu adalah sesuatu yang harus diciptakan \" — Fawn Weaver\n<br>\n<br>14. \" Keindahan pernikahan tidak selalu terlihat dari awal tetapi lebih sebagai cinta yang tumbuh dan berkembang dari seiring waktu.\" — Fawn Weaver\n<br><br>15. \" Ketika kamu berkorban dalam pernikahan, kamu berkorban bukan untuk satu sama lain tetapi untuk kesatuan dalam suatu hubungan.\" — Joseph Campbell\n<br>\n<br>16. \" Banyak pernikahan akan lebih baik jika suami dan istri mengerti dengan jelas bahwa mereka berada di pihak yang sama.\" — Zig Ziglar\n<br>\n<br>17. \"Pernikahan yang langgeng adalah dua orang yang mencoba menari duet dan solo pada saat yang bersamaan” Anne Taylor Fleming<br> \n<br>18. \" Pernikahan lebih dari sekadar menemukan orang yang tepat. Hal itu tentang menjadi orang yang tepat.\" — Unknown\n<br>\n<br>19. \" Pernikahan yang bahagia adalah percakapan panjang yang selalu terasa terlalu singkat.\" — Andre Maurois\n<br>\n<br>20. \"suami yang baik tidak belakangan pada malam hari dan bangun duluan di pagi hari.\" — Honore de Balzac&nbsp;<br></p></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content7\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <input type=\"color\" name=\"lineColor\" title=\"Line Color\" value=\"#6592e6\">\n        <input type=\"color\" name=\"cardColor\" title=\"Color\" value=\"#fafafa\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md-{{textWidth}}\">\n                <blockquote>\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Kata kata mutiara tentang pernikahan dari tokoh tokoh terkenal dunia:</b></h5>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">1. \"Jika seseorang dapat memperpanjang kebahagiaan cinta dalam pernikahan, itu akan menjadi surga di bumi.\" - Jean-Jacques Rousseau\n<br>\n<br>2. \"Dalam setiap pernikahan lebih dari seminggu yang lalu, ada alasan untuk perceraian. Triknya adalah menemukan, dan terus menemukan, alasan untuk menikah.\" - Sir Robert Anderson\n<br>\n<br>3. \"Sahabat terbaik cenderung mendapatkan istri terbaik, karena pernikahan yang baik didasarkan pada bakat untuk persahabatan.\" - Friedrich Nietzsche\n<br>\n<br>4. \"Ingat bahwa menciptakan pernikahan yang sukses itu seperti bertani, anda harusnya memulainya lagi setiap pagi” H. Jackson Brown Jr\n<br>\n<br>5. \"Kebahagiaan dalam pernikahan adalah masalah kebetulan.\" - Jane Austen\n<br>\n<br>6. \"Saya percaya pada pernikahan. Saya percaya pernikahan adalah institusi yang sangat penting, ini adalah salah satu institusi terpenting yang kita miliki.\" - Theresa May\n<br>\n<br>7. \"Menikah membuatku mengerti bahwa pada titik tertentu manusia membutuhkan seseorang yang lebih dari keluarga.\" - Aisha Blackwell\n<br>\n<br>8. \"Ada empat persyaratan dalam setiap pernikahan yang membahagiakan. Yang pertama adalah iman, dan sisanya adalah kepercayaan.\" - Elbert Hubbard\n<br>\n<br>9. \"Pernikahan bukanlah surga atau neraka, tetapi hanyalah penyucian.\" - Abraham Lincoln\n<br>\n<br>10. \"Tersembunyi atau terlihat, ada sebuah pemisah antara laki laki dan perempuan sampai sebuah pernikahan menyatukan mereka.\" - C. S. Lewis\n<br>\n<br>11. \"Pernikahan yang bahagia selalu menikmati kesenangan-kesenangan persahabatan. Semua keindahan dan kemanisan bercampur dalam bahagianya hidup.\" - Joseph Addison\n<br>\n<br>12. \"Sukses dalam pernikahan bukanlah dicapai sekadar melalui menemukan pasangan yang tepat, melainkan juga melalui menjadi pasangan yang tepat. – Barnett\n<br>\n<br>13. \" Pernikahan yang indah bukanlah sesuatu yang terjadi begitu saja; itu adalah sesuatu yang harus diciptakan \" — Fawn Weaver\n<br>\n<br>14. \" Keindahan pernikahan tidak selalu terlihat dari awal tetapi lebih sebagai cinta yang tumbuh dan berkembang dari seiring waktu.\" — Fawn Weaver\n<br><br>15. \" Ketika kamu berkorban dalam pernikahan, kamu berkorban bukan untuk satu sama lain tetapi untuk kesatuan dalam suatu hubungan.\" — Joseph Campbell\n<br>\n<br>16. \" Banyak pernikahan akan lebih baik jika suami dan istri mengerti dengan jelas bahwa mereka berada di pihak yang sama.\" — Zig Ziglar\n<br>\n<br>17. \"Pernikahan yang langgeng adalah dua orang yang mencoba menari duet dan solo pada saat yang bersamaan” Anne Taylor Fleming<br> \n<br>18. “Cinta tidak hanya tentang saling memandang, tetapi melihat bersama ke arah yang sama.” – Antoine de Saint-Exupery\n<br>\n<br>19. \" Pernikahan yang bahagia adalah percakapan panjang yang selalu terasa terlalu singkat.\" — Andre Maurois\n<br>\n<br>20. \"Suami yang baik tidak belakangan pada malam hari dan bangun duluan di pagi hari.\" — Honore de Balzac&nbsp;<br><br>21. “Pernikahan mengingatkan kita bahwa hidup kita memiliki makna dan bahwa cinta adalah ikatan yang terkuat, sukacita yang paling bahagia, dan penyembuhan terindah yang pernah kita alami.” – Daphne Rose Kingma<br><br>22. “Cinta adalah persahabatan yang berkobar. Itu adalah pengertian yang tenang, saling percaya, berbagi dan memaafkan. Itu adalah kesetiaan melalui saat-saat baik dan buruk. Ia menerima kekurangan dari kesempurnaan dan mengakui kelemahan manusia.” —Ann Landers<br>\n<br>23. Cinta adalah kekuatan yang lebih hebat dari apapun. Itu tidak terlihat—\n<br>hal ini tidak dapat dilihat atau diukur, namun hal ini cukup kuat untuk mengubah Anda dalam sekejap, dan memberi Anda lebih banyak kegembiraan daripada yang dapat diberikan oleh harta benda apa pun. —Barbara de Angelis\n<br>\n<br>24. Saat aku mendengar kisah cinta pertamaku, aku mulai mencarimu, tanpa menyadari pencarian itu sia-sia. Kekasih tidak bertemu di mana pun sepanjang jalan. Mereka ada dalam jiwa satu sama lain sejak awal. —Rumi\n<br>\n<br>25. “Dalam aritmatika cinta, satu tambah satu sama dengan segalanya, dan dua kurang satu tidak berarti apa-apa.” —Mignon McLaughlin\n<br>\n<br>26. “Apa yang lebih besar bagi dua jiwa manusia, selain merasakan bahwa mereka dipersatukan seumur hidup – untuk saling menguatkan dalam segala pekerjaan, untuk saling bertumpu dalam segala kesedihan, untuk saling melayani dalam kenangan hening yang tak terkatakan. momen perpisahan terakhir?” —George Eliot\n<br>\n<br>27. “Perkawinan yang sesungguhnya terjadi di dalam hati, bukan di ruang dansa, gereja, atau sinagoga. Itu adalah pilihan yang Anda buat / tidak hanya pada hari pernikahan Anda, tetapi berulang kali / dan pilihan itu tercermin dalam cara Anda memperlakukan suami atau istri Anda.” —Barbara De Angelis\n<br>\n<br>28. “Di seluruh dunia, tidak ada hati untukku seperti hatimu. Di seluruh dunia, tidak ada cinta untukmu seperti cintaku.” –Maya Angelou<br></p></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "tZeojesf6J",
           "_anchor": "content7-61",
           "_protectedParams": [],
@@ -26001,10 +26043,16 @@
               "content": "url(https://www.unsitepourtous.be/logoscript/flags145.png)"
             }
           },
-          "_customHTML": "<section data-bs-version=\"5.1\" mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n    <mbr-parameters>\n<hr>\n\n      \n     <header>Float Flags Menu 1.4.6</header>\n\n       <input type=\"checkbox\" title=\"Show Flags Bar\" name=\"Flagsbar\" checked=\"\"> \n              <input type=\"checkbox\" title=\"Bar Position\" name=\"Flagspos\" condition=\"Flagsbar\" checked=\"\">    \n        <input type=\"range\" inline=\"\" title=\"Padding\" name=\"paddingflag\" min=\"1\" max=\"30\" step=\"1\" value=\"3\" condition=\"Flagsbar\">\n        <input type=\"range\" inline=\"\" title=\"Padding Border\" name=\"paddingleft\" min=\"1\" max=\"30\" step=\"1\" value=\"11\" condition=\"Flagsbar\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"topflag\" min=\"1\" max=\"100\" step=\"1\" value=\"45\" condition=\"Flagsbar\">\n   \n     <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">Color</header>\n\t\t <input type=\"checkbox\" title=\"Background Transparent\" name=\"transp\" condition=\"Flagsbar\" checked=\"\">\n          <input type=\"color\" title=\"Button Bckg Color\" name=\"borderColor\" value=\"#000000\" condition=\"Flagsbar\"> \n      \n     <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">Language</header>\n<input type=\"checkbox\" title=\"Bahasa\" name=\"langid\" condition=\"Flagsbar\" checked=\"\">     \n <input type=\"checkbox\" title=\"English\" name=\"langgb\" condition=\"Flagsbar\" checked=\"\">\n  <input type=\"checkbox\" title=\"French\" name=\"langfr\" condition=\"Flagsbar\" checked=\"\">\n   <input type=\"checkbox\" title=\"Dutch\" name=\"langnl\" condition=\"Flagsbar\">\n    <input type=\"checkbox\" title=\"German\" name=\"langde\" condition=\"Flagsbar\">\n\t\t <input type=\"checkbox\" title=\"Spanish\" name=\"langes\" condition=\"Flagsbar\">\n                  \t\t <input type=\"checkbox\" title=\"Portugese\" name=\"langpt\" condition=\"Flagsbar\">\n          <input type=\"checkbox\" title=\"Italian\" name=\"langit\" condition=\"Flagsbar\">\n              <input type=\"checkbox\" title=\"Greek\" name=\"langgr\" condition=\"Flagsbar\"> \n                  <input type=\"checkbox\" title=\"Arabic\" name=\"langar\" condition=\"Flagsbar\" checked=\"\"> \n     <input type=\"checkbox\" title=\"Russian\" name=\"langru\" condition=\"Flagsbar\" checked=\"\">\n     \n          <input type=\"checkbox\" title=\"China\" name=\"langzhtw\" condition=\"Flagsbar\" checked=\"\">\n     <input type=\"checkbox\" title=\"Japan\" name=\"langja\" condition=\"Flagsbar\" checked=\"\">\n     <input type=\"checkbox\" title=\"Korea\" name=\"langkr\" condition=\"Flagsbar\" checked=\"\">\n                  \n      <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">WARNING</header>\n    <header condition=\"Flagsbar\">The start page must be in english, if your site is not en english, you must with code editor modify the line 37 and and replace \"en\" by your language code ( es, fr, de, ru,nl )</header>\n      \n\n        \n        \n    </mbr-parameters> \n    \n    \n    \n    \n  <script type=\"text/javascript\">\n  function googleTranslateElementInit() {\n    new google.translate.TranslateElement({pageLanguage: 'id', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, multilanguagePage: true}, 'google_translate_element');\n  }\n</script>\n\n  <script type=\"text/javascript\">\nvar toolBar = document.getElementsByClassName('goog-te-banner-frame skiptranslate')[0];\nif(toolBar !== undefined) {\n    toolBar.style.display  = 'none';\n    document.body.style.top = '0px';\n}\n</script>\n\n\n  <script src=\"https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\" type=\"text/javascript\"></script>\n\n<style>\n.nav-right {\n  float: left !important;\n  position: relative;\n}\n\n#google_translate_element {\n  display: none;\n}\n\n.goog-te-banner {\n  display: none;\n}\n\n.2.container {\n  display: none;\n}\n\n.skiptranslate {\n  display: none;\n  bottom: 0px;\n  position: relative;\n}\n\n.goog-te-spinner-pos {\n  display: none !important;\n}\n\n.goog-logo-link{display: none !important;}\n.goog-te-gadget{height: 28px !important;  overflow: hidden;}\n\n.goog-te-banner-frame.skiptranslate {display: none !important;} \nbody { top: 0px !important; }\n\n\nbody {\nbody{ top: 0 !important;}\n.goog-te-banner-frame{display: none !important;}\n}\n\n.goog-tooltip {\n    display: none !important;\n}\n.goog-tooltip:hover {\n    display: none !important;\n}\n.goog-text-highlight {\n    background-color: transparent !important;\n    border: none !important; \n    box-shadow: none !important;\n}\n\n#goog-gt-tt, .goog-te-balloon-frame{display: none !important;} \n\n\n\n</style>\n\n<div class=\"icon-bar\" mbr-if=\"Flagsbar\">\n    <a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(id)';location.reload();\" alt=\"ID\" title=\"Indonesia\" class=\"flag\" mbr-if=\"langgb\"><i class=\"flag-icon-id flag-icon\" mbr-if=\"langgb\"></i></a>\n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(en)';location.reload();\" alt=\"EN\" title=\"English\" class=\"flag\" mbr-if=\"langgb\"><i class=\"flag-icon-gb flag-icon\" mbr-if=\"langgb\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(fr)';location.reload();\" alt=\"FR\" title=\"France\" class=\"flag\" mbr-if=\"langfr\"><i class=\"flag-icon-bl flag-icon\" mbr-if=\"langfr\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(nl)';location.reload();\" alt=\"NL\" title=\"NL\" class=\"flag\" mbr-if=\"langnl\"><i class=\"flag-icon-nl flag-icon\" mbr-if=\"langnl\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(de)';location.reload();\" alt=\"DE\" title=\"DE\" class=\"flag\" mbr-if=\"langde\"><i class=\"flag-icon-de flag-icon\" mbr-if=\"langde\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(es)';location.reload();\" alt=\"ES\" title=\"ES\" class=\"flag\" mbr-if=\"langes\"><i class=\"flag-icon-es flag-icon\" mbr-if=\"langes\"></i></a>\n \t \t \t \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(pt)';location.reload();\" alt=\"PT\" title=\"PT\" class=\"flag\" mbr-if=\"langpt\"><i class=\"flag-icon-pt flag-icon\" mbr-if=\"langpt\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(it)';location.reload();\" alt=\"IT\" title=\"IT\" class=\"flag\" mbr-if=\"langit\"><i class=\"flag-icon-it flag-icon\" mbr-if=\"langit\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(el)';location.reload();\" alt=\"GR\" title=\"GR\" class=\"flag\" mbr-if=\"langgr\"><i class=\"flag-icon-gr flag-icon\" mbr-if=\"langgr\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ru)';location.reload();\" alt=\"RU\" title=\"Russia\" class=\"flag\" mbr-if=\"langru\"><i class=\"flag-icon-ru flag-icon\" mbr-if=\"langru\"></i></a> \n \t \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ar)';location.reload();\" alt=\"AR\" title=\"Arabic\" class=\"flag\" mbr-if=\"langar\"><i class=\"flag-icon-sa flag-icon\" mbr-if=\"langar\"></i></a>  \n \t\n \t     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(zh-CN)';location.reload();\" alt=\"CN\" title=\"Chinese\" class=\"flag\" mbr-if=\"langzhtw\"><i class=\"flag-icon-cn flag-icon\" mbr-if=\"langzhtw\"></i></a> \n     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ja)';location.reload();\" alt=\"JP\" title=\"Japanese\" class=\"flag\" mbr-if=\"langja\"><i class=\"flag-icon-jp flag-icon\" mbr-if=\"langja\"></i></a> \n     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ko)';location.reload();\" alt=\"KR\" title=\"Korea\" class=\"flag\" mbr-if=\"langkr\"><i class=\"flag-icon-kr flag-icon\" mbr-if=\"langkr\"></i></a> \n\n\n</div>\n\n  \n \n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background: linear-gradient( #807e7f, #f1f1f1, #807e7f);\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br><div class=\"imgtest2\"></div><br>Version 1.4.6<br>\n        Click the \"gear\" icon to change the layout of the flags bar. This text/logo will be removed on preview/publish.<br>You need the following extension for flags https://witsec.nl/extension-additional-icons.html#flag-icons<br><br><div class=\"imgtest\"></div><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
-          "_anchor": "design-block-c",
+          "_customHTML": "<section data-bs-version=\"5.1\" mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n    <mbr-parameters>\n<hr>\n\n      \n     <header>Float Flags Menu 1.4.6</header>\n\n       <input type=\"checkbox\" title=\"Show Flags Bar\" name=\"Flagsbar\" checked=\"\"> \n              <input type=\"checkbox\" title=\"Bar Position\" name=\"Flagspos\" condition=\"Flagsbar\" checked=\"\">    \n        <input type=\"range\" inline=\"\" title=\"Padding\" name=\"paddingflag\" min=\"1\" max=\"30\" step=\"1\" value=\"3\" condition=\"Flagsbar\">\n        <input type=\"range\" inline=\"\" title=\"Padding Border\" name=\"paddingleft\" min=\"1\" max=\"30\" step=\"1\" value=\"11\" condition=\"Flagsbar\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"topflag\" min=\"1\" max=\"100\" step=\"1\" value=\"45\" condition=\"Flagsbar\">\n   \n     <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">Color</header>\n\t\t <input type=\"checkbox\" title=\"Background Transparent\" name=\"transp\" condition=\"Flagsbar\" checked=\"\">\n          <input type=\"color\" title=\"Button Bckg Color\" name=\"borderColor\" value=\"#000000\" condition=\"Flagsbar\"> \n      \n     <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">Language</header>\n<input type=\"checkbox\" title=\"Bahasa\" name=\"langid\" condition=\"Flagsbar\" checked=\"\">     \n <input type=\"checkbox\" title=\"English\" name=\"langgb\" condition=\"Flagsbar\" checked=\"\">\n  <input type=\"checkbox\" title=\"French\" name=\"langfr\" condition=\"Flagsbar\" checked=\"\">\n   <input type=\"checkbox\" title=\"Dutch\" name=\"langnl\" condition=\"Flagsbar\" checked=\"\">\n    <input type=\"checkbox\" title=\"German\" name=\"langde\" condition=\"Flagsbar\" checked=\"\">\n\t\t <input type=\"checkbox\" title=\"Spanish\" name=\"langes\" condition=\"Flagsbar\">\n                  \t\t <input type=\"checkbox\" title=\"Portugese\" name=\"langpt\" condition=\"Flagsbar\">\n          <input type=\"checkbox\" title=\"Italian\" name=\"langit\" condition=\"Flagsbar\" checked=\"\">\n              <input type=\"checkbox\" title=\"Greek\" name=\"langgr\" condition=\"Flagsbar\"> \n                  <input type=\"checkbox\" title=\"Arabic\" name=\"langar\" condition=\"Flagsbar\" checked=\"\"> \n     <input type=\"checkbox\" title=\"Russian\" name=\"langru\" condition=\"Flagsbar\" checked=\"\">\n     \n          <input type=\"checkbox\" title=\"China\" name=\"langzhtw\" condition=\"Flagsbar\" checked=\"\">\n     <input type=\"checkbox\" title=\"Japan\" name=\"langja\" condition=\"Flagsbar\" checked=\"\">\n     <input type=\"checkbox\" title=\"Korea\" name=\"langkr\" condition=\"Flagsbar\" checked=\"\">\n                  \n      <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">WARNING</header>\n    <header condition=\"Flagsbar\">The start page must be in english, if your site is not en english, you must with code editor modify the line 37 and and replace \"en\" by your language code ( es, fr, de, ru,nl )</header>\n      \n\n        \n        \n    </mbr-parameters> \n    \n    \n    \n    \n  [JS_CODE_0]\n\n  [JS_CODE_1]\n\n\n  [JS_CODE_2]\n\n<style>\n.nav-right {\n  float: left !important;\n  position: relative;\n}\n\n#google_translate_element {\n  display: none;\n}\n\n.goog-te-banner {\n  display: none;\n}\n\n.2.container {\n  display: none;\n}\n\n.skiptranslate {\n  display: none;\n  bottom: 0px;\n  position: relative;\n}\n\n.goog-te-spinner-pos {\n  display: none !important;\n}\n\n.goog-logo-link{display: none !important;}\n.goog-te-gadget{height: 28px !important;  overflow: hidden;}\n\n.goog-te-banner-frame.skiptranslate {display: none !important;} \nbody { top: 0px !important; }\n\n\nbody {\nbody{ top: 0 !important;}\n.goog-te-banner-frame{display: none !important;}\n}\n\n.goog-tooltip {\n    display: none !important;\n}\n.goog-tooltip:hover {\n    display: none !important;\n}\n.goog-text-highlight {\n    background-color: transparent !important;\n    border: none !important; \n    box-shadow: none !important;\n}\n\n#goog-gt-tt, .goog-te-balloon-frame{display: none !important;} \n\n\n\n</style>\n\n<div class=\"icon-bar\" mbr-if=\"Flagsbar\">\n    <a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(id)';location.reload();\" alt=\"ID\" title=\"Indonesia\" class=\"flag\" mbr-if=\"langgb\"><i class=\"flag-icon-id flag-icon\" mbr-if=\"langgb\"></i></a>\n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(en)';location.reload();\" alt=\"EN\" title=\"English\" class=\"flag\" mbr-if=\"langgb\"><i class=\"flag-icon-gb flag-icon\" mbr-if=\"langgb\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(fr)';location.reload();\" alt=\"FR\" title=\"France\" class=\"flag\" mbr-if=\"langfr\"><i class=\"flag-icon-bl flag-icon\" mbr-if=\"langfr\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(nl)';location.reload();\" alt=\"NL\" title=\"Netherland\" class=\"flag\" mbr-if=\"langnl\"><i class=\"flag-icon-nl flag-icon\" mbr-if=\"langnl\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(de)';location.reload();\" alt=\"DE\" title=\"Deutsch\" class=\"flag\" mbr-if=\"langde\"><i class=\"flag-icon-de flag-icon\" mbr-if=\"langde\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(es)';location.reload();\" alt=\"ES\" title=\"Espanol\" class=\"flag\" mbr-if=\"langes\"><i class=\"flag-icon-es flag-icon\" mbr-if=\"langes\"></i></a>\n \t \t \t \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(pt)';location.reload();\" alt=\"PT\" title=\"Portuguese\" class=\"flag\" mbr-if=\"langpt\"><i class=\"flag-icon-pt flag-icon\" mbr-if=\"langpt\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(it)';location.reload();\" alt=\"IT\" title=\"Italian\" class=\"flag\" mbr-if=\"langit\"><i class=\"flag-icon-it flag-icon\" mbr-if=\"langit\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(el)';location.reload();\" alt=\"GR\" title=\"Greek\" class=\"flag\" mbr-if=\"langgr\"><i class=\"flag-icon-gr flag-icon\" mbr-if=\"langgr\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ru)';location.reload();\" alt=\"RU\" title=\"Russia\" class=\"flag\" mbr-if=\"langru\"><i class=\"flag-icon-ru flag-icon\" mbr-if=\"langru\"></i></a> \n \t \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ar)';location.reload();\" alt=\"AR\" title=\"Arabic\" class=\"flag\" mbr-if=\"langar\"><i class=\"flag-icon-sa flag-icon\" mbr-if=\"langar\"></i></a>  \n \t\n \t     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(zh-CN)';location.reload();\" alt=\"CN\" title=\"Chinese\" class=\"flag\" mbr-if=\"langzhtw\"><i class=\"flag-icon-cn flag-icon\" mbr-if=\"langzhtw\"></i></a> \n     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ja)';location.reload();\" alt=\"JP\" title=\"Japanese\" class=\"flag\" mbr-if=\"langja\"><i class=\"flag-icon-jp flag-icon\" mbr-if=\"langja\"></i></a> \n     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ko)';location.reload();\" alt=\"KR\" title=\"Korea\" class=\"flag\" mbr-if=\"langkr\"><i class=\"flag-icon-kr flag-icon\" mbr-if=\"langkr\"></i></a> \n\n\n</div>\n\n  \n \n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background: linear-gradient( #807e7f, #f1f1f1, #807e7f);\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br><div class=\"imgtest2\"></div><br>Version 1.4.6<br>\n        Click the \"gear\" icon to change the layout of the flags bar. This text/logo will be removed on preview/publish.<br>You need the following extension for flags https://witsec.nl/extension-additional-icons.html#flag-icons<br><br><div class=\"imgtest\"></div><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
+          "_JSplaceholders": [
+            "<script type=\"text/javascript\">\n  function googleTranslateElementInit() {\n    new google.translate.TranslateElement({pageLanguage: 'id', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, multilanguagePage: true}, 'google_translate_element');\n  }\n</script>",
+            "<script type=\"text/javascript\">\nvar toolBar = document.getElementsByClassName('goog-te-banner-frame skiptranslate')[0];\nif(toolBar !== undefined) {\n    toolBar.style.display  = 'none';\n    document.body.style.top = '0px';\n}\n</script>",
+            "<script src=\"https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\" type=\"text/javascript\"></script>"
+          ],
+          "_PHPplaceholders": [],
+          "_anchor": "design-block-6h",
           "_isUserblock": true,
-          "_cid": "trFlOCJ1rY",
+          "_cid": "tZeQSnPkb8",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -26019,7 +26067,7 @@
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
-        "order": "1"
+        "order": "2"
       },
       "components": [
         {
@@ -26148,11 +26196,11 @@
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
           "_cid": "tZeG2IFIm9",
+          "_anchor": "slider1-65",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "slider1-65"
+          "_params": {}
         },
         {
           "alias": false,
@@ -26191,11 +26239,11 @@
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"header4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"range\" inline=\"\" title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"100\" step=\"5\" value=\"60\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"media-content col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-white pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    INTRO WITH IMAGE\n                </h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-white mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-2\">\n                    Beautiful mobile websites\n                </h3>\n                <div class=\"mbr-text align-center mbr-white pb-3\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                        Intro with background image, color overlay and a picture at the bottom. Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface.\n                    </p>\n                </div>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.co\">LEARN MORE</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n                </div>\n            </div>\n            <div class=\"mbr-figure pt-5\">\n                <img src=\"@PROJECT_PATH@/assets/images/cool-text-425298828268666.png\" alt=\"Mobirise\" mbr-style=\"{'width': mediaSize + '%'}\" title=\"\">\n            </div>\n        </div>\n    </div>\n</section>",
           "_isUserblock": true,
           "_cid": "tZeG2Jgrhh",
+          "_anchor": "header4-66",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "header4-66"
+          "_params": {}
         },
         {
           "alias": false,
@@ -26213,11 +26261,11 @@
           "_sourceTheme": "mobirise5",
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"content7\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <input type=\"color\" name=\"lineColor\" title=\"Line Color\" value=\"#6592e6\">\n        <input type=\"color\" name=\"cardColor\" title=\"Color\" value=\"#fafafa\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md-{{textWidth}}\">\n                <blockquote>\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>20 kata kata mutiara dari tokoh tokoh terkenal:</b></h5>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">1. \"Jika seseorang dapat memperpanjang kebahagiaan cinta dalam pernikahan, itu akan menjadi surga di bumi.\" - Jean-Jacques Rousseau\n<br>\n<br>2. \"Dalam setiap pernikahan lebih dari seminggu yang lalu, ada alasan untuk perceraian. Triknya adalah menemukan, dan terus menemukan, alasan untuk menikah.\" - Sir Robert Anderson\n<br>\n<br>3. \"Sahabat terbaik cenderung mendapatkan istri terbaik, karena pernikahan yang baik didasarkan pada bakat untuk persahabatan.\" - Friedrich Nietzsche\n<br>\n<br>4. \"Ingat bahwa menciptakan pernikahan yang sukses itu seperti bertani, anda harusnya memulainya lagi setiap pagi” H. Jackson Brown Jr\n<br>\n<br>5. \"Kebahagiaan dalam pernikahan adalah masalah kebetulan.\" - Jane Austen\n<br>\n<br>6. \"Saya percaya pada pernikahan. Saya percaya pernikahan adalah institusi yang sangat penting, ini adalah salah satu institusi terpenting yang kita miliki.\" - Theresa May\n<br>\n<br>7. \"Menikah membuatku mengerti bahwa pada titik tertentu manusia membutuhkan seseorang yang lebih dari keluarga.\" - Aisha Blackwell\n<br>\n<br>8. \"Ada empat persyaratan dalam setiap pernikahan yang membahagiakan. Yang pertama adalah iman, dan sisanya adalah kepercayaan.\" - Elbert Hubbard\n<br>\n<br>9. \"Pernikahan bukanlah surga atau neraka, tetapi hanyalah penyucian.\" - Abraham Lincoln\n<br>\n<br>10. \"Tersembunyi atau terlihat, ada sebuah pemisah antara laki laki dan perempuan sampai sebuah pernikahan menyatukan mereka.\" - C. S. Lewis\n<br>\n<br>11. \"Pernikahan yang bahagia selalu menikmati kesenangan-kesenangan persahabatan. Semua keindahan dan kemanisan bercampur dalam bahagianya hidup.\" - Joseph Addison\n<br>\n<br>12. \"Sukses dalam pernikahan bukanlah dicapai sekadar melalui menemukan pasangan yang tepat, melainkan juga melalui menjadi pasangan yang tepat. – Barnett\n<br>\n<br>13. \" Pernikahan yang indah bukanlah sesuatu yang terjadi begitu saja; itu adalah sesuatu yang harus diciptakan \" — Fawn Weaver\n<br>\n<br>14. \" Keindahan pernikahan tidak selalu terlihat dari awal tetapi lebih sebagai cinta yang tumbuh dan berkembang dari seiring waktu.\" — Fawn Weaver\n<br><br>15. \" Ketika kamu berkorban dalam pernikahan, kamu berkorban bukan untuk satu sama lain tetapi untuk kesatuan dalam suatu hubungan.\" — Joseph Campbell\n<br>\n<br>16. \" Banyak pernikahan akan lebih baik jika suami dan istri mengerti dengan jelas bahwa mereka berada di pihak yang sama.\" — Zig Ziglar\n<br>\n<br>17. \"Pernikahan yang langgeng adalah dua orang yang mencoba menari duet dan solo pada saat yang bersamaan” Anne Taylor Fleming<br> \n<br>18. \" Pernikahan lebih dari sekadar menemukan orang yang tepat. Hal itu tentang menjadi orang yang tepat.\" — Unknown\n<br>\n<br>19. \" Pernikahan yang bahagia adalah percakapan panjang yang selalu terasa terlalu singkat.\" — Andre Maurois\n<br>\n<br>20. \"suami yang baik tidak belakangan pada malam hari dan bangun duluan di pagi hari.\" — Honore de Balzac&nbsp;<br></p></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "tZeG2JD1Rd",
+          "_anchor": "content7-67",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content7-67"
+          "_params": {}
         },
         {
           "_name": "design-block",
@@ -26346,11 +26394,395 @@
           "_customHTML": "<section data-bs-version=\"5.1\" mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n    <mbr-parameters>\n<hr>\n\n      \n     <header>Float Flags Menu 1.4.6</header>\n\n       <input type=\"checkbox\" title=\"Show Flags Bar\" name=\"Flagsbar\" checked=\"\"> \n              <input type=\"checkbox\" title=\"Bar Position\" name=\"Flagspos\" condition=\"Flagsbar\" checked=\"\">    \n        <input type=\"range\" inline=\"\" title=\"Padding\" name=\"paddingflag\" min=\"1\" max=\"30\" step=\"1\" value=\"3\" condition=\"Flagsbar\">\n        <input type=\"range\" inline=\"\" title=\"Padding Border\" name=\"paddingleft\" min=\"1\" max=\"30\" step=\"1\" value=\"11\" condition=\"Flagsbar\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"topflag\" min=\"1\" max=\"100\" step=\"1\" value=\"45\" condition=\"Flagsbar\">\n   \n     <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">Color</header>\n\t\t <input type=\"checkbox\" title=\"Background Transparent\" name=\"transp\" condition=\"Flagsbar\" checked=\"\">\n          <input type=\"color\" title=\"Button Bckg Color\" name=\"borderColor\" value=\"#000000\" condition=\"Flagsbar\"> \n      \n     <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">Language</header>\n<input type=\"checkbox\" title=\"Bahasa\" name=\"langid\" condition=\"Flagsbar\" checked=\"\">     \n <input type=\"checkbox\" title=\"English\" name=\"langgb\" condition=\"Flagsbar\" checked=\"\">\n  <input type=\"checkbox\" title=\"French\" name=\"langfr\" condition=\"Flagsbar\" checked=\"\">\n   <input type=\"checkbox\" title=\"Dutch\" name=\"langnl\" condition=\"Flagsbar\">\n    <input type=\"checkbox\" title=\"German\" name=\"langde\" condition=\"Flagsbar\">\n\t\t <input type=\"checkbox\" title=\"Spanish\" name=\"langes\" condition=\"Flagsbar\">\n                  \t\t <input type=\"checkbox\" title=\"Portugese\" name=\"langpt\" condition=\"Flagsbar\">\n          <input type=\"checkbox\" title=\"Italian\" name=\"langit\" condition=\"Flagsbar\">\n              <input type=\"checkbox\" title=\"Greek\" name=\"langgr\" condition=\"Flagsbar\"> \n                  <input type=\"checkbox\" title=\"Arabic\" name=\"langar\" condition=\"Flagsbar\" checked=\"\"> \n     <input type=\"checkbox\" title=\"Russian\" name=\"langru\" condition=\"Flagsbar\" checked=\"\">\n     \n          <input type=\"checkbox\" title=\"China\" name=\"langzhtw\" condition=\"Flagsbar\" checked=\"\">\n     <input type=\"checkbox\" title=\"Japan\" name=\"langja\" condition=\"Flagsbar\" checked=\"\">\n     <input type=\"checkbox\" title=\"Korea\" name=\"langkr\" condition=\"Flagsbar\" checked=\"\">\n                  \n      <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">WARNING</header>\n    <header condition=\"Flagsbar\">The start page must be in english, if your site is not en english, you must with code editor modify the line 37 and and replace \"en\" by your language code ( es, fr, de, ru,nl )</header>\n      \n\n        \n        \n    </mbr-parameters> \n    \n    \n    \n    \n  <script type=\"text/javascript\">\n  function googleTranslateElementInit() {\n    new google.translate.TranslateElement({pageLanguage: 'id', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, multilanguagePage: true}, 'google_translate_element');\n  }\n</script>\n\n  <script type=\"text/javascript\">\nvar toolBar = document.getElementsByClassName('goog-te-banner-frame skiptranslate')[0];\nif(toolBar !== undefined) {\n    toolBar.style.display  = 'none';\n    document.body.style.top = '0px';\n}\n</script>\n\n\n  <script src=\"https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\" type=\"text/javascript\"></script>\n\n<style>\n.nav-right {\n  float: left !important;\n  position: relative;\n}\n\n#google_translate_element {\n  display: none;\n}\n\n.goog-te-banner {\n  display: none;\n}\n\n.2.container {\n  display: none;\n}\n\n.skiptranslate {\n  display: none;\n  bottom: 0px;\n  position: relative;\n}\n\n.goog-te-spinner-pos {\n  display: none !important;\n}\n\n.goog-logo-link{display: none !important;}\n.goog-te-gadget{height: 28px !important;  overflow: hidden;}\n\n.goog-te-banner-frame.skiptranslate {display: none !important;} \nbody { top: 0px !important; }\n\n\nbody {\nbody{ top: 0 !important;}\n.goog-te-banner-frame{display: none !important;}\n}\n\n.goog-tooltip {\n    display: none !important;\n}\n.goog-tooltip:hover {\n    display: none !important;\n}\n.goog-text-highlight {\n    background-color: transparent !important;\n    border: none !important; \n    box-shadow: none !important;\n}\n\n#goog-gt-tt, .goog-te-balloon-frame{display: none !important;} \n\n\n\n</style>\n\n<div class=\"icon-bar\" mbr-if=\"Flagsbar\">\n    <a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(id)';location.reload();\" alt=\"ID\" title=\"Indonesia\" class=\"flag\" mbr-if=\"langgb\"><i class=\"flag-icon-id flag-icon\" mbr-if=\"langgb\"></i></a>\n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(en)';location.reload();\" alt=\"EN\" title=\"English\" class=\"flag\" mbr-if=\"langgb\"><i class=\"flag-icon-gb flag-icon\" mbr-if=\"langgb\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(fr)';location.reload();\" alt=\"FR\" title=\"France\" class=\"flag\" mbr-if=\"langfr\"><i class=\"flag-icon-bl flag-icon\" mbr-if=\"langfr\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(nl)';location.reload();\" alt=\"NL\" title=\"NL\" class=\"flag\" mbr-if=\"langnl\"><i class=\"flag-icon-nl flag-icon\" mbr-if=\"langnl\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(de)';location.reload();\" alt=\"DE\" title=\"DE\" class=\"flag\" mbr-if=\"langde\"><i class=\"flag-icon-de flag-icon\" mbr-if=\"langde\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(es)';location.reload();\" alt=\"ES\" title=\"ES\" class=\"flag\" mbr-if=\"langes\"><i class=\"flag-icon-es flag-icon\" mbr-if=\"langes\"></i></a>\n \t \t \t \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(pt)';location.reload();\" alt=\"PT\" title=\"PT\" class=\"flag\" mbr-if=\"langpt\"><i class=\"flag-icon-pt flag-icon\" mbr-if=\"langpt\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(it)';location.reload();\" alt=\"IT\" title=\"IT\" class=\"flag\" mbr-if=\"langit\"><i class=\"flag-icon-it flag-icon\" mbr-if=\"langit\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(el)';location.reload();\" alt=\"GR\" title=\"GR\" class=\"flag\" mbr-if=\"langgr\"><i class=\"flag-icon-gr flag-icon\" mbr-if=\"langgr\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ru)';location.reload();\" alt=\"RU\" title=\"Russia\" class=\"flag\" mbr-if=\"langru\"><i class=\"flag-icon-ru flag-icon\" mbr-if=\"langru\"></i></a> \n \t \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ar)';location.reload();\" alt=\"AR\" title=\"Arabic\" class=\"flag\" mbr-if=\"langar\"><i class=\"flag-icon-sa flag-icon\" mbr-if=\"langar\"></i></a>  \n \t\n \t     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(zh-CN)';location.reload();\" alt=\"CN\" title=\"Chinese\" class=\"flag\" mbr-if=\"langzhtw\"><i class=\"flag-icon-cn flag-icon\" mbr-if=\"langzhtw\"></i></a> \n     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ja)';location.reload();\" alt=\"JP\" title=\"Japanese\" class=\"flag\" mbr-if=\"langja\"><i class=\"flag-icon-jp flag-icon\" mbr-if=\"langja\"></i></a> \n     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ko)';location.reload();\" alt=\"KR\" title=\"Korea\" class=\"flag\" mbr-if=\"langkr\"><i class=\"flag-icon-kr flag-icon\" mbr-if=\"langkr\"></i></a> \n\n\n</div>\n\n  \n \n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background: linear-gradient( #807e7f, #f1f1f1, #807e7f);\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br><div class=\"imgtest2\"></div><br>Version 1.4.6<br>\n        Click the \"gear\" icon to change the layout of the flags bar. This text/logo will be removed on preview/publish.<br>You need the following extension for flags https://witsec.nl/extension-additional-icons.html#flag-icons<br><br><div class=\"imgtest\"></div><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
           "_isUserblock": true,
           "_cid": "tZeG2JZiCv",
+          "_anchor": "design-block-68",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "design-block-68"
+          "_params": {}
+        }
+      ]
+    },
+    "page19.html": {
+      "settings": {
+        "title": "Page 19",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "meta_image": "@PROJECT_PATH@/assets/images/mbr-12-1920x1280.jpg",
+        "order": "1"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)",
+              ".carousel": {
+                "height": "800px",
+                "img": {
+                  "width": "100%",
+                  "height": "100%",
+                  "object-fit": "cover"
+                }
+              },
+              ".carousel-item, .carousel-inner": {
+                "height": "100%"
+              }
+            },
+            "& when (@fullScreen)": {
+              "padding-top": "0",
+              "padding-bottom": "0",
+              ".carousel": {
+                "width": "100%"
+              },
+              ".carousel-inner": {
+                "display": "flex",
+                "align-content": "center",
+                "align-items": "center"
+              },
+              ".carousel-item img": {
+                "height": "100vh",
+                "object-fit": "cover"
+              }
+            },
+            "background-color": "@bgColor",
+            ".carousel-caption": {
+              "bottom": "40px"
+            },
+            ".mobi-mbri-arrow-next": {
+              "margin-left": "5px"
+            },
+            ".mobi-mbri-arrow-prev": {
+              "margin-right": "5px"
+            },
+            ".carousel-control:hover": {
+              "background": "#1b1b1b",
+              "color": "#fff",
+              "opacity": "1"
+            },
+            ".item-wrapper": {
+              "width": "100%"
+            },
+            "@media (max-width: 767px)": {
+              ".container .carousel-control": {
+                "margin-bottom": "0"
+              },
+              ".content-slider-wrap": {
+                "width": "100% !important"
+              }
+            },
+            ".container .carousel-indicators": {
+              "margin-bottom": "3px"
+            },
+            ".carousel-control": {
+              "top": "50%",
+              "width": "60px",
+              "height": "60px",
+              "margin-top": "-1.5rem",
+              "font-size": "22px",
+              "background-color": "rgba(0, 0, 0, 0.5)",
+              "border": "2px solid #fff",
+              "border-radius": "50%",
+              "transition": "all 0.3s",
+              "&.carousel-control-prev": {
+                "left": "0",
+                "margin-left": "2.5rem"
+              },
+              "&.carousel-control-next": {
+                "right": "0",
+                "margin-right": "2.5rem"
+              },
+              "@media (max-width: 767px)": {
+                "top": "auto",
+                "bottom": "1rem"
+              }
+            },
+            ".carousel-indicators": {
+              "position": "absolute",
+              "bottom": "0",
+              "margin-bottom": "1.5rem !important",
+              "li": {
+                "max-width": "15px",
+                "height": "15px",
+                "width": "15px",
+                "max-height": "15px",
+                "margin": "3px",
+                "background-color": "rgba(0, 0, 0, 0.5)",
+                "border": "2px solid #fff",
+                "border-radius": "50%",
+                "opacity": "0.5",
+                "transition": "all 0.3s",
+                "&.active, &:hover": {
+                  "opacity": "0.9"
+                },
+                "&::after, &::before": {
+                  "content": "none"
+                }
+              },
+              "&.ie-fix": {
+                "left": "50%",
+                "display": "block",
+                "width": "60%",
+                "margin-left": "-30%",
+                "text-align": "center"
+              },
+              "@media (max-width: 768px)": {
+                "display": "none !important"
+              }
+            }
+          },
+          "_name": "slider1",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"slider1\" group=\"Sliders &amp; Galleries\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n    <mbr-parameters>\n        <input type=\"id\" name=\"sliderId\">\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"!fullScreen\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"!fullScreen\">\n        <header>Carousel</header>\n        <input type=\"checkbox\" title=\"Fade Effect\" name=\"fade\">\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\">\n        <input type=\"range\" title=\"Interval\" name=\"interval\" min=\"3\" max=\"10\" value=\"5\" step=\"1\" condition=\"autoplay\">\n        <header>Slide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showCaption\" checked=\"\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#fafafa\" selected=\"\">\n    </mbr-parameters>\n    <div id=\"{{sliderId}}\" class=\"carousel slide\" mbr-class=\"{'carousel-fade': fade}\" data-ride=\"{{autoplay ? 'carousel' : false}}\" data-bs-ride=\"{{autoplay ? 'carousel' : false}}\" data-interval=\"{{interval*1000}}\" data-bs-interval=\"{{interval*1000}}\">\n        <ol class=\"carousel-indicators\">\n            <li data-target=\"#{{sliderId}}\" data-bs-target=\"#{{sliderId}}\" data-slide-to=\"0\" data-bs-slide-to=\"0\" class=\"active\"></li>\n            <li data-target=\"#{{sliderId}}\" data-bs-target=\"#{{sliderId}}\" data-slide-to=\"1\" data-bs-slide-to=\"1\"></li>\n            <li data-target=\"#{{sliderId}}\" data-bs-target=\"#{{sliderId}}\" data-slide-to=\"2\" data-bs-slide-to=\"2\"></li>\n        </ol>\n        <div class=\"carousel-inner\">\n            <div class=\"carousel-item slider-image item active\">\n                <div class=\"item-wrapper\">\n                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/mbr-1900x1265.jpg\" alt=\"undangan pernikahan online virtual\">\n                    <div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n                    </div>\n                    <div class=\"carousel-caption\" mbr-if=\"showCaption || showText\">\n                        <h1 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showCaption\" mbr-theme-style=\"display-1\"><b>Undangan Pernikahan</b></h1>\n                        <p class=\"mbr-section-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">Click on the image to edit slides.</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"carousel-item slider-image item\">\n                <div class=\"item-wrapper\">\n                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/mbr-1900x1259.jpg\" alt=\"undangan pernikahan dalam bentuk website\">\n                    <div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n                    </div>\n                    <div class=\"carousel-caption\" mbr-if=\"showCaption || showText\">\n                        <h2 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showCaption\" mbr-theme-style=\"display-1\">\n                            <b>Kami Akan Menikah</b></h2>\n                        <p class=\"mbr-section-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">Click on the image to edit slides.</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"carousel-item slider-image item\">\n                <div class=\"item-wrapper\">\n                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/mbr-1-1900x1267.jpg\" alt=\"website pernikahan\">\n                    <div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n                    </div>\n                    <div class=\"carousel-caption\" mbr-if=\"showCaption || showText\">\n                        <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showCaption\" mbr-theme-style=\"display-1\"><b>Datanglah ke Pernikahan Kami</b></h3>\n                        <p class=\"mbr-section-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">Click on the image to edit slides.</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <a class=\"carousel-control carousel-control-prev\" href=\"#{{sliderId}}\" role=\"button\" data-slide=\"prev\" data-bs-slide=\"prev\">\n            <span class=\"mobi-mbri mobi-mbri-arrow-prev\" aria-hidden=\"true\"></span>\n            <span class=\"sr-only visually-hidden\">Previous</span>\n        </a>\n        <a class=\"carousel-control carousel-control-next\" href=\"#{{sliderId}}\" role=\"button\" data-slide=\"next\" data-bs-slide=\"next\">\n            <span class=\"mobi-mbri mobi-mbri-arrow-next\" aria-hidden=\"true\"></span>\n            <span class=\"sr-only visually-hidden\">Next</span>\n        </a>\n    </div>\n</section>",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_cid": "tZePX08LDp",
+          "_anchor": "slider1-6c",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-figure": {
+              "margin": "0 auto",
+              "width": "100%",
+              "display": "-webkit-flex",
+              "justify-content": "center",
+              "-webkit-justify-content": "center",
+              "img": {
+                "height": "100%",
+                "margin": "0 auto"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".mbr-figure": {
+                "img": {
+                  "width": "100% !important"
+                }
+              }
+            }
+          },
+          "_name": "header4",
+          "_sourceTheme": "mobirise4",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"range\" inline=\"\" title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"100\" step=\"5\" value=\"60\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"media-content col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-white pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    INTRO WITH IMAGE\n                </h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-white mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-2\">\n                    Beautiful mobile websites\n                </h3>\n                <div class=\"mbr-text align-center mbr-white pb-3\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                        Intro with background image, color overlay and a picture at the bottom. Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface.\n                    </p>\n                </div>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.co\">LEARN MORE</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n                </div>\n            </div>\n            <div class=\"mbr-figure pt-5\">\n                <img src=\"@PROJECT_PATH@/assets/images/cool-text-425298828268666.png\" alt=\"Mobirise\" mbr-style=\"{'width': mediaSize + '%'}\" title=\"\">\n            </div>\n        </div>\n    </div>\n</section>",
+          "_isUserblock": true,
+          "_cid": "tZePX1dU2M",
+          "_anchor": "header4-6d",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_name": "header6",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header6\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value>Left</option>\n            <option value=\"justify-content-center\" selected>Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background6.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#e0bdb6\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#4479d9\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>MOBIRISE BUILDER</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mbr-white mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-white mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Tanpa mengurangi rasa hormat, izinkan kami mengundang Bapak/Ibu/Saudara/Saudari untuk menghadiri acara pernikahan kami. Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/Saudari berkenan untuk hadir dan memberikan doa restu.\n                </p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-danger\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Create Your Website!</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_cid": "tZePX1Q7O5",
+          "_anchor": "header6-6e",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "blockquote": {
+              "border-color": "@lineColor",
+              "border-radius": "4px",
+              "background-color": "@cardColor"
+            }
+          },
+          "_name": "content7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content7\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <input type=\"color\" name=\"lineColor\" title=\"Line Color\" value=\"#6592e6\">\n        <input type=\"color\" name=\"cardColor\" title=\"Color\" value=\"#fafafa\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md-{{textWidth}}\">\n                <blockquote>\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Kata kata mutiara tentang pernikahan dari tokoh tokoh terkenal dunia:</b></h5>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">1. \"Jika seseorang dapat memperpanjang kebahagiaan cinta dalam pernikahan, itu akan menjadi surga di bumi.\" - Jean-Jacques Rousseau\n<br>\n<br>2. \"Dalam setiap pernikahan lebih dari seminggu yang lalu, ada alasan untuk perceraian. Triknya adalah menemukan, dan terus menemukan, alasan untuk menikah.\" - Sir Robert Anderson\n<br>\n<br>3. \"Sahabat terbaik cenderung mendapatkan istri terbaik, karena pernikahan yang baik didasarkan pada bakat untuk persahabatan.\" - Friedrich Nietzsche\n<br>\n<br>4. \"Ingat bahwa menciptakan pernikahan yang sukses itu seperti bertani, anda harusnya memulainya lagi setiap pagi” H. Jackson Brown Jr\n<br>\n<br>5. \"Kebahagiaan dalam pernikahan adalah masalah kebetulan.\" - Jane Austen\n<br>\n<br>6. \"Saya percaya pada pernikahan. Saya percaya pernikahan adalah institusi yang sangat penting, ini adalah salah satu institusi terpenting yang kita miliki.\" - Theresa May\n<br>\n<br>7. \"Menikah membuatku mengerti bahwa pada titik tertentu manusia membutuhkan seseorang yang lebih dari keluarga.\" - Aisha Blackwell\n<br>\n<br>8. \"Ada empat persyaratan dalam setiap pernikahan yang membahagiakan. Yang pertama adalah iman, dan sisanya adalah kepercayaan.\" - Elbert Hubbard\n<br>\n<br>9. \"Pernikahan bukanlah surga atau neraka, tetapi hanyalah penyucian.\" - Abraham Lincoln\n<br>\n<br>10. \"Tersembunyi atau terlihat, ada sebuah pemisah antara laki laki dan perempuan sampai sebuah pernikahan menyatukan mereka.\" - C. S. Lewis\n<br>\n<br>11. \"Pernikahan yang bahagia selalu menikmati kesenangan-kesenangan persahabatan. Semua keindahan dan kemanisan bercampur dalam bahagianya hidup.\" - Joseph Addison\n<br>\n<br>12. \"Sukses dalam pernikahan bukanlah dicapai sekadar melalui menemukan pasangan yang tepat, melainkan juga melalui menjadi pasangan yang tepat. – Barnett\n<br>\n<br>13. \" Pernikahan yang indah bukanlah sesuatu yang terjadi begitu saja; itu adalah sesuatu yang harus diciptakan \" — Fawn Weaver\n<br>\n<br>14. \" Keindahan pernikahan tidak selalu terlihat dari awal tetapi lebih sebagai cinta yang tumbuh dan berkembang dari seiring waktu.\" — Fawn Weaver\n<br><br>15. \" Ketika kamu berkorban dalam pernikahan, kamu berkorban bukan untuk satu sama lain tetapi untuk kesatuan dalam suatu hubungan.\" — Joseph Campbell\n<br>\n<br>16. \" Banyak pernikahan akan lebih baik jika suami dan istri mengerti dengan jelas bahwa mereka berada di pihak yang sama.\" — Zig Ziglar\n<br>\n<br>17. \"Pernikahan yang langgeng adalah dua orang yang mencoba menari duet dan solo pada saat yang bersamaan” Anne Taylor Fleming<br> \n<br>18. “Cinta tidak hanya tentang saling memandang, tetapi melihat bersama ke arah yang sama.” – Antoine de Saint-Exupery\n<br>\n<br>19. \" Pernikahan yang bahagia adalah percakapan panjang yang selalu terasa terlalu singkat.\" — Andre Maurois\n<br>\n<br>20. \"Suami yang baik tidak belakangan pada malam hari dan bangun duluan di pagi hari.\" — Honore de Balzac&nbsp;<br><br>21. “Pernikahan mengingatkan kita bahwa hidup kita memiliki makna dan bahwa cinta adalah ikatan yang terkuat, sukacita yang paling bahagia, dan penyembuhan terindah yang pernah kita alami.” – Daphne Rose Kingma<br><br>22. “Cinta adalah persahabatan yang berkobar. Itu adalah pengertian yang tenang, saling percaya, berbagi dan memaafkan. Itu adalah kesetiaan melalui saat-saat baik dan buruk. Ia menerima kekurangan dari kesempurnaan dan mengakui kelemahan manusia.” —Ann Landers<br>\n<br>23. Cinta adalah kekuatan yang lebih hebat dari apapun. Itu tidak terlihat—\n<br>hal ini tidak dapat dilihat atau diukur, namun hal ini cukup kuat untuk mengubah Anda dalam sekejap, dan memberi Anda lebih banyak kegembiraan daripada yang dapat diberikan oleh harta benda apa pun. —Barbara de Angelis\n<br>\n<br>24. Saat aku mendengar kisah cinta pertamaku, aku mulai mencarimu, tanpa menyadari pencarian itu sia-sia. Kekasih tidak bertemu di mana pun sepanjang jalan. Mereka ada dalam jiwa satu sama lain sejak awal. —Rumi\n<br>\n<br>25. “Dalam aritmatika cinta, satu tambah satu sama dengan segalanya, dan dua kurang satu tidak berarti apa-apa.” —Mignon McLaughlin\n<br>\n<br>26. “Apa yang lebih besar bagi dua jiwa manusia, selain merasakan bahwa mereka dipersatukan seumur hidup – untuk saling menguatkan dalam segala pekerjaan, untuk saling bertumpu dalam segala kesedihan, untuk saling melayani dalam kenangan hening yang tak terkatakan. momen perpisahan terakhir?” —George Eliot\n<br>\n<br>27. “Ketika Anda menyadari bahwa Anda ingin menghabiskan sisa hidup Anda dengan seseorang, Anda ingin sisa hidup Anda dimulai secepat mungkin.” - Ketika Harry bertemu Sally\n<br>\n<br>28. “Perkawinan yang sesungguhnya terjadi di dalam hati, bukan di ruang dansa, gereja, atau sinagoga. Itu adalah pilihan yang Anda buat / tidak hanya pada hari pernikahan Anda, tetapi berulang kali / dan pilihan itu tercermin dalam cara Anda memperlakukan suami atau istri Anda.” —Barbara De Angelis\n<br>\n<br>29. “Di seluruh dunia, tidak ada hati untukku seperti hatimu. Di seluruh dunia, tidak ada cinta untukmu seperti cintaku.” –Maya Angelou<br></p></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tZePX2ELvv",
+          "_anchor": "content7-6f",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "design-block",
+          "_sourceTheme": "mobirise4",
+          "_styles": {
+            "P": {
+              "color": "#1281fc"
+            },
+            "DIV": {
+              "color": "#ffffff"
+            },
+            "H10": {
+              "color": "#034e75"
+            },
+            ".hidden": {
+              "display": "none"
+            },
+            ".icon-bar": {
+              "z-index": "100002",
+              "position": "fixed",
+              "& when not (@Flagspos)": {
+                "right": "0"
+              },
+              "top": "(@topflag * 1%)",
+              "-webkit-transform": "translateY(-50%)",
+              "-ms-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)",
+              "padding-right": "(@paddingleft * 1px)"
+            },
+            ".icon-bar a": {
+              "display": "block",
+              "text-align": "center",
+              "padding": "(@paddingflag * 1px)",
+              "transition": "all 0.3s ease",
+              "color": "white",
+              "font-size": "20px",
+              "padding-left": "(@paddingleft * 1px)"
+            },
+            ".icon-bar a:hover": {
+              "background-color": "@borderColor"
+            },
+            "& when not (@transp)": {
+              ".flag": {
+                "background": "@borderColor"
+              }
+            },
+            "& when (@transp)": {
+              ".flag": {
+                "background": "transparent"
+              }
+            },
+            ".content": {
+              "margin-left": "75px",
+              "font-size": "30px"
+            },
+            ".nav-right": {
+              "float": "left !important",
+              "position": "relative"
+            },
+            "#google_translate_element": {
+              "display": "none"
+            },
+            ".goog-te-banner": {
+              "display": "none"
+            },
+            ".skiptranslate": {
+              "display": "none",
+              "bottom": "0px",
+              "position": "relative"
+            },
+            ".goog-te-spinner-pos": {
+              "display": "none !important"
+            },
+            "body": {
+              "body": {
+                "top": "0 !important"
+              },
+              ".goog-te-banner-frame": {
+                "display": "none !important"
+              },
+              "top": "0px !important"
+            },
+            ".goog-te-banner-frame.skiptranslate": {
+              "display": "none !important"
+            },
+            ".goog-tooltip": {
+              "display": "none !important"
+            },
+            ".goog-tooltip:hover": {
+              "display": "none !important"
+            },
+            ".goog-text-highlight": {
+              "background-color": "transparent !important",
+              "border": "none !important",
+              "box-shadow": "none !important",
+              "display": "none !important",
+              "Background-color": "transparent"
+            },
+            "#goog-gt-tt, .goog-te-balloon-frame": {
+              "display": "none !important"
+            },
+            "#goog-gt-tt": {
+              "visibility": "hidden",
+              "display": "none !important"
+            },
+            ".goog-logo-link": {
+              "display": "none !important"
+            },
+            ".goog-te-gadget": {
+              "height": "28px !important",
+              "overflow": "hidden"
+            },
+            "div.imgtest": {
+              "margin-left": "auto",
+              "margin-right": "auto",
+              "width": "100px",
+              "content": "url(https://www.unsitepourtous.be/logoscript/logo-zen.png)"
+            },
+            "div.imgtest2": {
+              "margin-left": "auto",
+              "margin-right": "auto",
+              "width": "250px",
+              "content": "url(https://www.unsitepourtous.be/logoscript/flags145.png)"
+            }
+          },
+          "_customHTML": "<section data-bs-version=\"5.1\" mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n    <mbr-parameters>\n<hr>\n\n      \n     <header>Float Flags Menu 1.4.6</header>\n\n       <input type=\"checkbox\" title=\"Show Flags Bar\" name=\"Flagsbar\" checked=\"\"> \n              <input type=\"checkbox\" title=\"Bar Position\" name=\"Flagspos\" condition=\"Flagsbar\" checked=\"\">    \n        <input type=\"range\" inline=\"\" title=\"Padding\" name=\"paddingflag\" min=\"1\" max=\"30\" step=\"1\" value=\"3\" condition=\"Flagsbar\">\n        <input type=\"range\" inline=\"\" title=\"Padding Border\" name=\"paddingleft\" min=\"1\" max=\"30\" step=\"1\" value=\"11\" condition=\"Flagsbar\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"topflag\" min=\"1\" max=\"100\" step=\"1\" value=\"45\" condition=\"Flagsbar\">\n   \n     <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">Color</header>\n\t\t <input type=\"checkbox\" title=\"Background Transparent\" name=\"transp\" condition=\"Flagsbar\" checked=\"\">\n          <input type=\"color\" title=\"Button Bckg Color\" name=\"borderColor\" value=\"#000000\" condition=\"Flagsbar\"> \n      \n     <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">Language</header>\n<input type=\"checkbox\" title=\"Bahasa\" name=\"langid\" condition=\"Flagsbar\" checked=\"\">     \n <input type=\"checkbox\" title=\"English\" name=\"langgb\" condition=\"Flagsbar\" checked=\"\">\n  <input type=\"checkbox\" title=\"French\" name=\"langfr\" condition=\"Flagsbar\" checked=\"\">\n   <input type=\"checkbox\" title=\"Dutch\" name=\"langnl\" condition=\"Flagsbar\">\n    <input type=\"checkbox\" title=\"German\" name=\"langde\" condition=\"Flagsbar\">\n\t\t <input type=\"checkbox\" title=\"Spanish\" name=\"langes\" condition=\"Flagsbar\">\n                  \t\t <input type=\"checkbox\" title=\"Portugese\" name=\"langpt\" condition=\"Flagsbar\">\n          <input type=\"checkbox\" title=\"Italian\" name=\"langit\" condition=\"Flagsbar\">\n              <input type=\"checkbox\" title=\"Greek\" name=\"langgr\" condition=\"Flagsbar\"> \n                  <input type=\"checkbox\" title=\"Arabic\" name=\"langar\" condition=\"Flagsbar\" checked=\"\"> \n     <input type=\"checkbox\" title=\"Russian\" name=\"langru\" condition=\"Flagsbar\" checked=\"\">\n     \n          <input type=\"checkbox\" title=\"China\" name=\"langzhtw\" condition=\"Flagsbar\" checked=\"\">\n     <input type=\"checkbox\" title=\"Japan\" name=\"langja\" condition=\"Flagsbar\" checked=\"\">\n     <input type=\"checkbox\" title=\"Korea\" name=\"langkr\" condition=\"Flagsbar\" checked=\"\">\n                  \n      <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">WARNING</header>\n    <header condition=\"Flagsbar\">The start page must be in english, if your site is not en english, you must with code editor modify the line 37 and and replace \"en\" by your language code ( es, fr, de, ru,nl )</header>\n      \n\n        \n        \n    </mbr-parameters> \n    \n    \n    \n    \n  <script type=\"text/javascript\">\n  function googleTranslateElementInit() {\n    new google.translate.TranslateElement({pageLanguage: 'id', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, multilanguagePage: true}, 'google_translate_element');\n  }\n</script>\n\n  <script type=\"text/javascript\">\nvar toolBar = document.getElementsByClassName('goog-te-banner-frame skiptranslate')[0];\nif(toolBar !== undefined) {\n    toolBar.style.display  = 'none';\n    document.body.style.top = '0px';\n}\n</script>\n\n\n  <script src=\"https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\" type=\"text/javascript\"></script>\n\n<style>\n.nav-right {\n  float: left !important;\n  position: relative;\n}\n\n#google_translate_element {\n  display: none;\n}\n\n.goog-te-banner {\n  display: none;\n}\n\n.2.container {\n  display: none;\n}\n\n.skiptranslate {\n  display: none;\n  bottom: 0px;\n  position: relative;\n}\n\n.goog-te-spinner-pos {\n  display: none !important;\n}\n\n.goog-logo-link{display: none !important;}\n.goog-te-gadget{height: 28px !important;  overflow: hidden;}\n\n.goog-te-banner-frame.skiptranslate {display: none !important;} \nbody { top: 0px !important; }\n\n\nbody {\nbody{ top: 0 !important;}\n.goog-te-banner-frame{display: none !important;}\n}\n\n.goog-tooltip {\n    display: none !important;\n}\n.goog-tooltip:hover {\n    display: none !important;\n}\n.goog-text-highlight {\n    background-color: transparent !important;\n    border: none !important; \n    box-shadow: none !important;\n}\n\n#goog-gt-tt, .goog-te-balloon-frame{display: none !important;} \n\n\n\n</style>\n\n<div class=\"icon-bar\" mbr-if=\"Flagsbar\">\n    <a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(id)';location.reload();\" alt=\"ID\" title=\"Indonesia\" class=\"flag\" mbr-if=\"langgb\"><i class=\"flag-icon-id flag-icon\" mbr-if=\"langgb\"></i></a>\n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(en)';location.reload();\" alt=\"EN\" title=\"English\" class=\"flag\" mbr-if=\"langgb\"><i class=\"flag-icon-gb flag-icon\" mbr-if=\"langgb\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(fr)';location.reload();\" alt=\"FR\" title=\"France\" class=\"flag\" mbr-if=\"langfr\"><i class=\"flag-icon-bl flag-icon\" mbr-if=\"langfr\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(nl)';location.reload();\" alt=\"NL\" title=\"NL\" class=\"flag\" mbr-if=\"langnl\"><i class=\"flag-icon-nl flag-icon\" mbr-if=\"langnl\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(de)';location.reload();\" alt=\"DE\" title=\"DE\" class=\"flag\" mbr-if=\"langde\"><i class=\"flag-icon-de flag-icon\" mbr-if=\"langde\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(es)';location.reload();\" alt=\"ES\" title=\"ES\" class=\"flag\" mbr-if=\"langes\"><i class=\"flag-icon-es flag-icon\" mbr-if=\"langes\"></i></a>\n \t \t \t \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(pt)';location.reload();\" alt=\"PT\" title=\"PT\" class=\"flag\" mbr-if=\"langpt\"><i class=\"flag-icon-pt flag-icon\" mbr-if=\"langpt\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(it)';location.reload();\" alt=\"IT\" title=\"IT\" class=\"flag\" mbr-if=\"langit\"><i class=\"flag-icon-it flag-icon\" mbr-if=\"langit\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(el)';location.reload();\" alt=\"GR\" title=\"GR\" class=\"flag\" mbr-if=\"langgr\"><i class=\"flag-icon-gr flag-icon\" mbr-if=\"langgr\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ru)';location.reload();\" alt=\"RU\" title=\"Russia\" class=\"flag\" mbr-if=\"langru\"><i class=\"flag-icon-ru flag-icon\" mbr-if=\"langru\"></i></a> \n \t \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ar)';location.reload();\" alt=\"AR\" title=\"Arabic\" class=\"flag\" mbr-if=\"langar\"><i class=\"flag-icon-sa flag-icon\" mbr-if=\"langar\"></i></a>  \n \t\n \t     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(zh-CN)';location.reload();\" alt=\"CN\" title=\"Chinese\" class=\"flag\" mbr-if=\"langzhtw\"><i class=\"flag-icon-cn flag-icon\" mbr-if=\"langzhtw\"></i></a> \n     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ja)';location.reload();\" alt=\"JP\" title=\"Japanese\" class=\"flag\" mbr-if=\"langja\"><i class=\"flag-icon-jp flag-icon\" mbr-if=\"langja\"></i></a> \n     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ko)';location.reload();\" alt=\"KR\" title=\"Korea\" class=\"flag\" mbr-if=\"langkr\"><i class=\"flag-icon-kr flag-icon\" mbr-if=\"langkr\"></i></a> \n\n\n</div>\n\n  \n \n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background: linear-gradient( #807e7f, #f1f1f1, #807e7f);\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br><div class=\"imgtest2\"></div><br>Version 1.4.6<br>\n        Click the \"gear\" icon to change the layout of the flags bar. This text/logo will be removed on preview/publish.<br>You need the following extension for flags https://witsec.nl/extension-additional-icons.html#flag-icons<br><br><div class=\"imgtest\"></div><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
+          "_isUserblock": true,
+          "_cid": "tZePX3PIzp",
+          "_anchor": "design-block-6g",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         }
       ]
     }
