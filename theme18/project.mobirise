@@ -65,7 +65,7 @@
     "spellingSwitch": true,
     "site_lang": "en",
     "imageResize": true,
-    "uniqCompNum": 283,
+    "uniqCompNum": 284,
     "versionPublish": "5.9.0",
     "screenshot": "screenshot.png",
     "chatbutton": {},
@@ -94,7 +94,7 @@
         "title": "Home",
         "meta_descr": "",
         "header_custom": "<style>\n      section {\n        background-attachment:fixed;\n      }\n      </style>",
-        "footer_custom": "<script>  \nfunction getURLParameter(name) {\n    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,\"\"])[1].replace(/\\+/g, '%20'))||null\n}\n\nvar imggroom = getURLParameter('imggroom');\nif (imggroom) {\ndocument.getElementById(\"imggroom\").style.backgroundImage = 'url('+imggroom+')'; // add the ID\n}\n\nvar imgbride = getURLParameter('imgbride');\nif (imgbride) {\ndocument.getElementById(\"imgbride\").style.backgroundImage = 'url('+imgbride+')'; // add the ID\n}\n\nvar imgsmall1 = getURLParameter('imgsmall1');\nif (imgsmall1) {\ndocument.getElementById(\"imgsmall1\").style.backgroundImage = 'url('+imgsmall1+')'; // add the ID\n}\n\nvar imgsmall2 = getURLParameter('imgsmall2');\nif (imgsmall2) {\ndocument.getElementById(\"imgsmall2\").style.backgroundImage = 'url('+imgsmall2+')'; // add the ID\n}\n\nvar imgbig = getURLParameter('imgbig');\nif (imgbig) {\ndocument.getElementById(\"imgbig\").style.backgroundImage = 'url('+imgbig+')'; // add the ID\n}\n\n\n\n</script>\n\n\n\n<script>\n    function getParameterByName(name, url = window.location.href) {\n        name = name.replace(/[\\[\\]]/g, '\\\\$&');\n        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),\n            results = regex.exec(url);\n        if (!results) return null;\n        if (!results[2]) return '';\n        return decodeURIComponent(results[2].replace(/\\+/g, ' '));\n    }\n    var couple = getParameterByName('couple');\n       var guest = getParameterByName('guest');\n       var groomfull = getParameterByName('groomfull');\n       var bridefull = getParameterByName('bridefull');\n       var groom = getParameterByName('groom');\n       var bride = getParameterByName('bride');\n\tvar when = getParameterByName('when');\n\tvar where = getParameterByName('where');\n    document.getElementById(\"couple\").innerText = couple;\n      document.getElementById(\"guest\").innerText = guest;\n      document.getElementById(\"groomfull\").innerText = groomfull;\n\tdocument.getElementById(\"bridefull\").innerText = bridefull;\n\n      document.getElementById(\"groom\").innerText = groom;\n\tdocument.getElementById(\"bride\").innerText = bride;\n\tdocument.getElementById(\"when\").innerText = when;\n\tdocument.getElementById(\"where\").innerText = where;\n</script>\n\n\n\n\n<div style=\"position:fixed;bottom:0;left:0;right:0;width:105%;\">\n<audio controls  autoplay=\"\" src=\"https://www.geocities.ws/bryan23456/A%20thousand%20Years%20by%20Cristina%20Perri.mp3\" loop=\"true\">\nYour browser does not support the\n<code>audio</code> element.\n</audio>\n</div>",
+        "footer_custom": "<script>  \nfunction getURLParameter(name) {\n    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,\"\"])[1].replace(/\\+/g, '%20'))||null\n}\n\nvar imggroom = getURLParameter('imggroom');\nif (imggroom) {\ndocument.getElementById(\"imggroom\").style.backgroundImage = 'url('+imggroom+')'; // add the ID\n}\n\nvar imgbride = getURLParameter('imgbride');\nif (imgbride) {\ndocument.getElementById(\"imgbride\").style.backgroundImage = 'url('+imgbride+')'; // add the ID\n}\n\nvar imgsmall1 = getURLParameter('imgsmall1');\nif (imgsmall1) {\ndocument.getElementById(\"imgsmall1\").style.backgroundImage = 'url('+imgsmall1+')'; // add the ID\n}\n\nvar imgsmall2 = getURLParameter('imgsmall2');\nif (imgsmall2) {\ndocument.getElementById(\"imgsmall2\").style.backgroundImage = 'url('+imgsmall2+')'; // add the ID\n}\n\nvar imgbig = getURLParameter('imgbig');\nif (imgbig) {\ndocument.getElementById(\"imgbig\").style.backgroundImage = 'url('+imgbig+')'; // add the ID\n}\n\n\n\n</script>\n\n\n\n<script>\n    function getParameterByName(name, url = window.location.href) {\n        name = name.replace(/[\\[\\]]/g, '\\\\$&');\n        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),\n            results = regex.exec(url);\n        if (!results) return null;\n        if (!results[2]) return '';\n        return decodeURIComponent(results[2].replace(/\\+/g, ' '));\n    }\n    var couple = getParameterByName('couple');\n       var guest = getParameterByName('guest');\n       var groomfull = getParameterByName('groomfull');\n       var bridefull = getParameterByName('bridefull');\n       var groom = getParameterByName('groom');\n       var bride = getParameterByName('bride');\n\tvar when = getParameterByName('when');\n\tvar where = getParameterByName('where');\n    document.getElementById(\"couple\").innerText = couple;\n      document.getElementById(\"guest\").innerText = guest;\n      document.getElementById(\"groomfull\").innerText = groomfull;\n\tdocument.getElementById(\"bridefull\").innerText = bridefull;\n\n      document.getElementById(\"groom\").innerText = groom;\n\tdocument.getElementById(\"bride\").innerText = bride;\n\tdocument.getElementById(\"when\").innerText = when;\n\tdocument.getElementById(\"where\").innerText = where;\n</script>\n\n\n\n\n<div style=\"position:fixed;bottom:0;left:0;right:0;width:105%;\">\n<audio controls  autoplay=\"\" src=\"https://www.geocities.ws/bryan23456/A%20thousand%20Years%20by%20Cristina%20Perri.mp3\" loop=\"true\">\nYour browser does not support the\n<code>audio</code> element.\n</audio>\n</div>\n\n\n   <!-- Histats.com  START  (aync)-->\n<script type=\"text/javascript\">var _Hasync= _Hasync|| [];\n_Hasync.push(['Histats.start', '1,4832305,4,0,0,0,00010000']);\n_Hasync.push(['Histats.fasi', '1']);\n_Hasync.push(['Histats.track_hits', '']);\n(function() {\nvar hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;\nhs.src = ('//s10.histats.com/js15_as.js');\n(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);\n})();</script>\n<noscript><a href=\"/\" target=\"_blank\"><img  src=\"//sstatic1.histats.com/0.gif?4832305&101\" alt=\"website statistics\" border=\"0\"></a></noscript>\n<!-- Histats.com  END  -->",
         "html_before": ""
       },
       "components": [
@@ -880,6 +880,45 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_name": "header1",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"5\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background13.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#fafafa\">\n            <input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=JY0UnJpYc4Q\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fafafa\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.1\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><br><br><br></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">\n                        Header Subtitle\n                    </h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Mobirise Free Website Maker is perfect for non-techies and great for pro-coders for fast prototyping and small customers' projects.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Create Website</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tZlBTYX2IW",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header1-7v"
         },
         {
           "_name": "agallery6",
