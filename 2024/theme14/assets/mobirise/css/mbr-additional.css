@@ -1116,7 +1116,7 @@ a {
   color: #333333!important;
 }
 .cid-tYH6I1Jain .image1 {
-  position: absolute;
+  position: fixed;
   right: 8%;
   top: 25%;
   height: 500px;
@@ -1124,7 +1124,7 @@ a {
   animation: rev 5s ease-in-out infinite;
 }
 .cid-tYH6I1Jain .image2 {
-  position: absolute;
+  position: fixed;
   left: 8%;
   bottom: 20%;
   height: 500px;
