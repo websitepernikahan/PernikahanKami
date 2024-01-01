@@ -297,6 +297,36 @@
     </div>
 </section>
 
+<section data-bs-version="5.1" class="cid-u00gdx2IBc mbr-fullscreen" id="header2-6b">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(0, 0, 0);"></div>
+
+    
+    
+    <div class="container align-center">
+        <div class="row justify-content-md-center">
+            <div class="mbr-white col-md-10">
+                
+                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-5">Putra dari <span id="sonof"></span></h1>
+                
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-5">dan</h1>
+                
+                                
+                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-5">Putri dari <span id="daughterof"></span></h1>
+                
+                
+                
+                
+                <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-1"><strong><p id="couple"></p></strong></h1> 
+                
+            </div>
+        </div>
+    </div>
+    
+</section>
+
 <section data-bs-version="5.1" class="cid-tXnIrQ93T2 mbr-fullscreen" id="header2-10">
 
     
@@ -350,6 +380,32 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
                 <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-1"><strong>Save The Date</strong></h1>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="header6 cid-u00goSNdvF mbr-fullscreen" id="header6-6c">
+
+    
+
+    
+    
+
+    <div class="align-center container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                
+                
+               
+                
+                <p class="mbr-text mbr-fonts-style display-7">
+                    Kehadiran Bapak/Ibu/Saudara/Saudari sangat kami nantikan. <br>Namun apabila berhalangan, dan tetap ingin memberikan hadiah, juga bisa mengirimkan dana ke rekening:<br> <span id="bank"></span></p>
+                
+                
                 
                 
                 
@@ -641,22 +697,28 @@ document.getElementById("imgbig").style.backgroundImage = 'url('+imgbig+')'; // 
         return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
     var couple = getParameterByName('couple');
-       var guest = getParameterByName('guest');
-       var groomfull = getParameterByName('groomfull');
+    var guest = getParameterByName('guest');   
+var groomfull = getParameterByName('groomfull');
        var bridefull = getParameterByName('bridefull');
        var groom = getParameterByName('groom');
        var bride = getParameterByName('bride');
+       var sonof = getParameterByName('sonof');
+       var daughterof = getParameterByName('daughterof');
 	var when = getParameterByName('when');
 	var where = getParameterByName('where');
+        var bank = getParameterByName('bank');
     document.getElementById("couple").innerText = couple;
-      document.getElementById("guest").innerText = guest;
+    document.getElementById("guest").innerText = guest;
       document.getElementById("groomfull").innerText = groomfull;
 	document.getElementById("bridefull").innerText = bridefull;
-
       document.getElementById("groom").innerText = groom;
 	document.getElementById("bride").innerText = bride;
-	document.getElementById("when").innerText = when;
+      document.getElementById("sonof").innerText = sonof;
+	document.getElementById("daughterof").innerText = daughterof;
+document.getElementById("when").innerText = when;
 	document.getElementById("where").innerText = where;
+document.getElementById("bank").innerText = bank;
+	
 </script>
 
 
